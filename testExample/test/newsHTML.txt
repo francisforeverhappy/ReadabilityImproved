@@ -1,0 +1,171 @@
+<!DOCTYPE html SYSTEM "http://www.fsmtag.org/dtd/xhtml1-strict-fsmtag-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"> 
+  <meta name="robots" content="all"> 
+  <title>习近平在塔吉克斯坦媒体发表署名文章-中工新闻-中工网</title> 
+  <meta name="keywords" content="中工网,工人日报,中工新闻,主流新闻,头条要闻,部委,神州,台湾,香港,澳门,评论,图片,图解,专题,时事,时政,国际新闻,国际要闻,社会法治,聚焦,评论,文化教育,新视点,深度,网评,专题,环球,传播,论坛,图片,军事,焦点,排行,环保,校园,法治,奇闻,真情"> 
+  <meta name="description" content="中工新闻是国内主流新闻网站中工网旗下综合新闻资讯门户,也是中工网核心主频道,每天24小时为广大网民滚动报道国内、国际及社会新闻。"> 
+  <meta name="author" content="中工新闻">    
+  <!--[if IE 6]>
+<script type="text/javascript" src="http://www.workercn.cn/sites/main/2014szqh/js/png.js"></script>
+<script>
+DD_belatedPNG.fix('*');
+</script>
+<![endif]-->  
+ </head> 
+ <body> 
+  <div class="ad1"> 
+   <div style="MARGIN-TOP: 20px" align="center"> 
+    <a href="http://news.workercn.cn/zl70n/index.htm" target="_blank"><img style="HEIGHT: 90px; BORDER-TOP-COLOR: ; WIDTH: 1000px; BORDER-LEFT-COLOR: ; BORDER-BOTTOM-COLOR: ; FILTER: none; BORDER-RIGHT-COLOR: " border="0" hspace="0" alt="" src="http://news.workercn.cn/html/files/2019-04/10/20190410103318378547572.jpg" width="1000" height="90"></a> 
+   </div> 
+  </div> 
+  <div class="head"> 
+   <h1 class="logo"><a href="http://news.workercn.cn/"><img src="/sites/sz/new/images/logo.png" width="107" height="38" alt="中工新闻"></a></h1> 
+   <h2 class="sub"><a href="/32841/32841.shtml">要闻</a></h2> 
+   <p class="search"> 
+    <form method="get" action="http://search.workercn.cn/search/app-info/search-ajax.jsp" target="_blank" accept-charset="utf-8" onsubmit="return ncheck(this);"> 
+     <input type="text" class="search1" name="q" placeholder="请输入关键词"> 
+     <input type="image" class="search2" src="/sites/sz/new/images/search.gif" width="37" height="24"> 
+     <input type="hidden" class="sbutton" name="b1"> 
+    </form> </p> 
+  </div> 
+  <p class="line1"></p> 
+  <div class="container main"> 
+   <div class="left"> 
+    <h1 class="ctitle">习近平在塔吉克斯坦媒体发表署名文章</h1> 
+    <p class="signdate"> <span>2019-06-12 13:03:55</span>　 <span>新华社</span> </p> 
+    <div class="ccontent" readabilitycontentscore="93"> 
+     <span readabilitycontentscore="137"> 
+      <!--Content_Start--><p>　　新华社北京6月12日电 6月12日，在出席亚洲相互协作与信任措施会议第五次峰会并对塔吉克斯坦共和国进行国事访问前夕，国家主席习近平在塔吉克斯坦《人民报》、“霍瓦尔”国家通讯社发表题为《携手共铸中塔友好新辉煌》的署名文章。文章如下：</p> <p align="center"><strong><span>携手共铸中塔友好新辉煌</span></strong></p> <p align="center"><strong><span>中华人民共和国主席　习近平</span></strong></p> <p>　　“到处野芳红胜锦，满川新涨碧于银”。在这个生机盎然的仲夏时节，应拉赫蒙总统邀请，我即将对友好的塔吉克斯坦进行国事访问。5年前，我第一次访问塔吉克斯坦，这里壮美多姿的山川、悠久绚烂的文化、热情淳朴的人民给我留下美好而深刻的印象。即将再次踏上这片古老的土地，见到热情好客的塔吉克斯坦朋友，我充满期待。</p> <p>　　中国和塔吉克斯坦山水相连，两国人民友好交往源远流长。2000多年前，中国西汉张骞凿空西域之旅，开辟了伟大的丝绸之路，在人类文明交流史上留下了华美乐章。两国先民互通有无，互学互鉴。在中亚这片广袤土地上，大唐玄奘、明朝陈诚都留下了友好足迹，索莫尼、鲁达基等塔吉克斯坦历史文化名人的故事也在中华大地传颂，粟特人多姿的身影成为唐三彩骆驼载乐俑的主角。历经千百年积淀，两国人民友谊如同巍峨屹立的帕米尔高原，不因风云变幻而动摇，不随时代变迁而改变。</p> <p>　　27年前，中国率先承认塔吉克斯坦独立，两国建立外交关系，中塔人民友好焕发出新的勃勃生机。27年来，中塔两国始终相互信任、彼此尊重，在各领域开展了互利合作，在国际社会树立了不同制度、不同文明、不同规模国家友好合作的典范。</p> <p>　　――平等互信使中塔友好稳如磐石。中国古人说，“与朋友交，言而有信”。互信是中塔全面战略伙伴关系的基石。正是基于互信，中塔成功解决历史遗留的边界问题，495公里的共同边界成为连接中塔人民友谊的桥梁和纽带。双方在涉及彼此核心利益的重大问题上始终相互理解、相互支持。中塔已成为山水相连的好邻居、真诚互信的好朋友、合作共赢的好伙伴、彼此扶持的好兄弟。</p> <p>　　――互利共赢使中塔友好充满活力。中塔共建“一带一路”合作走在前列。塔吉克斯坦第一个同中国签署共建丝绸之路经济带合作备忘录，成立合作委员会，双方共同实施了一系列具有标志性的大型合作项目。亚湾－瓦赫达特铁路桥隧道的贯通，使塔吉克斯坦南北相隔的铁路变成通途；杜尚别热电厂的建成，让塔吉克斯坦首都冬季缺电成为了历史；中央直辖区500千伏输变电线的竣工，提升了塔吉克斯坦北部电网稳定性和安全性。水泥厂、炼油厂、农业纺织产业园、矿业冶炼工业园等项目顺利实施，成为塔吉克斯坦工业化的加速器。中国已成为塔吉克斯坦最大投资来源国和主要贸易伙伴。未来几年，中塔贸易额将突破30亿美元。实践表明，中塔两国已携手走出一条优势互补、共谋发展、共享繁荣的道路。</p> <p>　　――民心相通使中塔友好世代相传。“汉语热”、“塔吉克斯坦热”已在两国蔚然成风。中国多所大学开设了塔吉克语专业和塔吉克斯坦研究中心，两所孔子学院和两所孔子课堂在塔吉克斯坦开展汉语教学工作。不久前，拉赫蒙总统所著《历史倒影中的塔吉克民族》中文版在华出版发行，为中国人民了解塔吉克斯坦提供了新视角。上个月，“塔吉克斯坦文化节”在北京和西安两地成功举行，让中国人民再次领略了塔吉克斯坦文化的魅力。两国人民像走亲戚一样常来常往，世代友好更加深入人心。</p> <p>　　当今世界正面临百年未有之大变局，和平与发展仍然是时代主题，但保护主义、单边主义肆意横行，地区形势中的不确定因素增多。中塔全面战略伙伴关系发展既面临难得的历史机遇，也面临前所未有的复杂挑战。中方愿同塔方携手合作，把好机遇，共迎挑战。</p> <p>　　我们要深化政策沟通，从战略高度和长远角度对中塔关系发展作好顶层设计。密切高层交往，加强政府、议会、政党、地方各级别合作，继续在涉及彼此核心利益和重大关切问题上相互给予坚定支持，夯实中塔关系行稳致远的政治基础。</p> <p>　　我们要绘制共建“一带一路”的工笔画，在平等互利的基础上拓展合作空间，以战略性大项目为重点，优先发展能源、交通、农业、工业等领域合作，持续扩大贸易投资，欢迎通过中国国际进口博览会等平台扩大对华出口，构建内容丰富、成效显著、惠泽民众的务实合作格局。</p> <p>　　我们要推进民心相通，深化语言教学、名著互译、考古发掘、文物保护、影视制作等方面合作，让中塔两个悠久文明在交流融汇中更加多彩。我们要在青少年心中播撒友谊种子，培养两国友好事业接班人，让中塔友好薪火相传。</p> <p>　　我们要全力深化打击“三股势力”和跨国有组织犯罪、禁毒、网络安全等领域合作，更好维护两国和本地区安全稳定。</p> <p>　　我们要加强在国际事务中的战略协作，深化在联合国、上海合作组织、亚信等多边平台的协调配合，维护多边主义和自由贸易体制，反对单边主义和霸凌行径，为推动全球治理体系的完善和变革作出不懈努力。</p> <p>　　亚信成立27年来，顺应时代发展潮流，致力于增进各国互信和协作，维护地区安全稳定，为促进亚洲和平与发展作出积极贡献。在亚信2014年上海峰会上，我提出践行共同、综合、合作、可持续的新安全观，倡议探索符合亚洲特点和各国共同利益的安全和发展道路，得到各方积极响应。5年来，我们着力丰富亚信合作理念，充实亚信合作内涵，成立亚信非政府论坛、青年委员会、实业家委员会，加深同联合国、上海合作组织等多边机制合作，显著提升了亚信国际影响力。</p> <p>　　塔吉克斯坦接任亚信主席国以来，为推动亚信发展作出积极贡献。中方愿同塔方及其他成员国一道，以杜尚别峰会为新起点，推动亚信合作不断迈上新台阶，为促进亚洲和世界安全和发展作出更大贡献。</p> <p>　　中国的先哲曰：“事虽小，不为不成”。塔吉克斯坦谚语讲：“有志气的蚂蚁也能把大山搬走”。中方愿同塔方携手努力，以持之以恒的勤勉精神，共铸中塔友好新辉煌。</p> 
+      <!--Content_End--></span> 
+    </div> 
+    <div class="function"> 
+     <p class="editor"> 编辑： <span>夏赛赛</span> </p> 
+     <p class="share"></p> 
+    </div> 
+    <p class="ad3"> &nbsp; </p> 
+    <p class="ad3"> &nbsp; </p> 
+    <h2><span>相关阅读</span></h2> 
+    <div class="content"> 
+     <ul> 
+      <li><a href="/619/201409/17/140917172239702.shtml" target="_blank">务实合作 布局中国周边外交</a></li> 
+      <li><a href="/607/201708/31/170831213833392.shtml" target="_blank">习近平同塔吉克斯坦总统拉赫蒙举行会谈 　</a></li> 
+      <li><a href="/32841/201806/09/180609195555194.shtml" target="_blank">习近平会见塔吉克斯坦总统拉赫蒙</a></li> 
+      <li><a href="/32841/201810/12/181012000211317.shtml" target="_blank">李克强在塔吉克斯坦媒体发表署名文章</a></li> 
+      <li><a href="/32843/201810/15/181015141600649.shtml" target="_blank">中塔务实合作为“一带一路”建设提供新经验</a></li> 
+      <li><a href="/32841/201904/28/190428161650167.shtml" target="_blank">习近平会见塔吉克斯坦总统拉赫蒙</a></li> 
+      <li><a href="/32845/201906/10/190610050807041.shtml" target="_blank">深化区域合作 共创亚洲美好未来</a></li> 
+      <li><a href="/32842/201906/10/190610131326094.shtml" target="_blank">外交部就习近平主席访问吉、塔两国并出席上合组织和亚信峰会举行吹风会</a></li> 
+     </ul> 
+    </div> 
+    <div class="ad3"> 
+     <p>&nbsp; </p> 
+    </div> 
+    <p id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></p> 
+    <div class="ad3"> 
+     <p>&nbsp; </p> 
+    </div> 
+    <h2><span><a href="/32846/32846.shtml" target="_blank">高清图片</a></span></h2> 
+    <div class="jctk"> 
+     <ul> 
+      <li> 
+       <div> 
+        <a href="/32846/201906/12/190612103139358.shtml" target="_blank"><img src="/html/files/2019-06/12/20190612103138495270951.jpg" width="210" height="127"></a> 
+       </div> <h3><a href="/32846/201906/12/190612103139358.shtml" target="_blank">“海事蓝”为全球船舶大气污染防治贡献中国力量</a></h3> </li> 
+      <li> 
+       <div> 
+        <a href="/32846/201906/12/190612100753364.shtml" target="_blank"><img src="/html/files/2019-06/12/20190612100753230224953.jpg" width="210" height="127"></a> 
+       </div> <h3><a href="/32846/201906/12/190612100753364.shtml" target="_blank">长江口“幽灵”油船抗法逃逸 撞上海事局公务船</a></h3> </li> 
+      <li> 
+       <div> 
+        <a href="/32846/201906/12/190612072015615.shtml" target="_blank"><img src="/html/files/2019-06/12/20190612072015314782699.jpg" width="210" height="127"></a> 
+       </div> <h3><a href="/32846/201906/12/190612072015615.shtml" target="_blank">暴雨洪涝致广东河源7人死亡 1人失联</a></h3> </li> 
+      <li> 
+       <div> 
+        <a href="/32846/201906/12/190612072007000.shtml" target="_blank"><img src="/html/files/2019-06/12/20190612072006556703776.jpg" width="210" height="127"></a> 
+       </div> <h3><a href="/32846/201906/12/190612072007000.shtml" target="_blank">雪山脚下有条“中国路”</a></h3> </li> 
+      <li> 
+       <div> 
+        <a href="/32846/201906/12/190612071954933.shtml" target="_blank"><img src="/html/files/2019-06/12/20190612071954426679648.jpg" width="210" height="127"></a> 
+       </div> <h3><a href="/32846/201906/12/190612071954933.shtml" target="_blank">夏日农忙</a></h3> </li> 
+      <li> 
+       <div> 
+        <a href="/32846/201906/12/190612071948608.shtml" target="_blank"><img src="/html/files/2019-06/12/20190612071948273551556.jpg" width="210" height="127"></a> 
+       </div> <h3><a href="/32846/201906/12/190612071948608.shtml" target="_blank">乘“峰”破前浪 开放新岛城――上合组织青岛峰会后的青岛嬗变</a></h3> </li> 
+     </ul> 
+    </div> 
+   </div> 
+   <div class="right"> 
+    <div class="ad2"> 
+     <a href="http://news.workercn.cn/bwcxljsm0606/index.html" target="_blank"><img style="HEIGHT: 250px; BORDER-TOP-COLOR: ; WIDTH: 300px; BORDER-LEFT-COLOR: ; BORDER-BOTTOM-COLOR: ; FILTER: none; BORDER-RIGHT-COLOR: " border="0" hspace="0" alt="" src="http://news.workercn.cn/html/files/2019-06/06/20190606161124604441908.jpg" width="300" height="250"></a> 
+    </div> 
+    <h2><a href="/32846/32846.shtml" target="_blank">图片</a></h2> 
+    <ul class="imglist"> 
+     <li> <a href="/32846/201906/12/190612103139358.shtml" target="_blank"><img src="/html/files/2019-06/12/20190612103138495270951.jpg" width="140" height="85"></a> <h3><a href="/32846/201906/12/190612103139358.shtml" target="_blank">“海事蓝”为全球船舶大气污染防治贡献中国力量</a></h3> </li> 
+     <li> <a href="/32846/201906/12/190612100753364.shtml" target="_blank"><img src="/html/files/2019-06/12/20190612100753230224953.jpg" width="140" height="85"></a> <h3><a href="/32846/201906/12/190612100753364.shtml" target="_blank">长江口“幽灵”油船抗法逃逸 撞上海事局公务船</a></h3> </li> 
+    </ul> 
+    <ul class="imglist"> 
+     <li> <a href="/32846/201906/12/190612072015615.shtml" target="_blank"><img src="/html/files/2019-06/12/20190612072015314782699.jpg" width="140" height="85"></a> <h3><a href="/32846/201906/12/190612072015615.shtml" target="_blank">暴雨洪涝致广东河源7人死亡 1人失联</a></h3> </li> 
+     <li> <a href="/32846/201906/12/190612072007000.shtml" target="_blank"><img src="/html/files/2019-06/12/20190612072006556703776.jpg" width="140" height="85"></a> <h3><a href="/32846/201906/12/190612072007000.shtml" target="_blank">雪山脚下有条“中国路”</a></h3> </li> 
+    </ul> 
+    <ul class="imglist"> 
+     <li> <a href="/32846/201906/12/190612071954933.shtml" target="_blank"><img src="/html/files/2019-06/12/20190612071954426679648.jpg" width="140" height="85"></a> <h3><a href="/32846/201906/12/190612071954933.shtml" target="_blank">夏日农忙</a></h3> </li> 
+     <li> <a href="/32846/201906/12/190612071948608.shtml" target="_blank"><img src="/html/files/2019-06/12/20190612071948273551556.jpg" width="140" height="85"></a> <h3><a href="/32846/201906/12/190612071948608.shtml" target="_blank">乘“峰”破前浪 开放新岛城――上合组织青岛峰会后的青岛嬗变</a></h3> </li> 
+    </ul> 
+    <div class="ad2"> 
+     <a href="http://news.workercn.cn/2019whwdzgyqzg/index.htm" target="_blank"><img style="HEIGHT: 250px; BORDER-TOP-COLOR: ; WIDTH: 300px; BORDER-LEFT-COLOR: ; BORDER-BOTTOM-COLOR: ; FILTER: none; BORDER-RIGHT-COLOR: " border="0" hspace="0" alt="" src="http://news.workercn.cn/html/files/2019-04/02/20190402160631046276478.jpg" width="300" height="250"></a> 
+    </div> 
+    <h2><a href="/32847/32847.shtml" target="_blank">图解</a></h2> 
+    <ul class="imglist"> 
+     <li> <a href="/32847/201906/11/190611195636130.shtml" target="_blank"><img src="/html/files/2019-06/11/20190611195747194591537.jpg" width="140" height="85"></a> <h3><a href="/32847/201906/11/190611195636130.shtml" target="_blank">一图读懂：卫生健康系统为医务人员减负措施</a></h3> </li> 
+     <li> <a href="/32847/201906/10/190610212421162.shtml" target="_blank"><img src="/html/files/2019-06/10/20190610212547561443675.jpg" width="140" height="85"></a> <h3><a href="/32847/201906/10/190610212421162.shtml" target="_blank">一图前瞻习近平主席吉尔吉斯斯坦、塔吉克斯坦之行 </a></h3> </li> 
+    </ul> 
+    <h2><a href="#" target="_blank">排行</a></h2> 
+    <ul class="top10"> 
+     <div> 
+      <ul> 
+       <li class="ai_li0" style="list-style-type:none; font-size:12px;"> <img class="icon" src="/sites/gj/ufile/1.gif" border="0"> <a title="/32847/201906/14/190614175855303.shtml" href="/32847/201906/14/190614175855303.shtml" style=" text-decoration:none" target="_blank">&nbsp;生态环境执法“三项制度” </a> </li> 
+       <li class="ai_li1" style="list-style-type:none; font-size:12px;"> <img class="icon" src="/sites/gj/ufile/2.gif" border="0"> <a title="/32843/201906/14/190614175328489.shtml" href="/32843/201906/14/190614175328489.shtml" style=" text-decoration:none" target="_blank">&nbsp;5月份中国工业增加值增长5% 高技术制造... </a> </li> 
+       <li class="ai_li2" style="list-style-type:none; font-size:12px;"> <img class="icon" src="/sites/gj/ufile/3.gif" border="0"> <a title="/32844/201906/14/190614175313004.shtml" href="/32844/201906/14/190614175313004.shtml" style=" text-decoration:none" target="_blank">&nbsp;海峡两岸茶王赛11个茶王出炉（组图） </a> </li> 
+       <li class="ai_li3" style="list-style-type:none; font-size:12px;"> <a title="/32843/201906/14/190614174804377.shtml" href="/32843/201906/14/190614174804377.shtml" style=" text-decoration:none" target="_blank">&nbsp;国家网信办集中整治网上“软色情”信息 为... </a> </li> 
+       <li class="ai_li4" style="list-style-type:none; font-size:12px;"> <a title="/32843/201906/14/190614174713657.shtml" href="/32843/201906/14/190614174713657.shtml" style=" text-decoration:none" target="_blank">&nbsp;【边疆党旗红】罗家坪村：守边脱贫忙 边疆... </a> </li> 
+       <li class="ai_li5" style="list-style-type:none; font-size:12px;"> <a title="/32844/201906/14/190614174524839.shtml" href="/32844/201906/14/190614174524839.shtml" style=" text-decoration:none" target="_blank">&nbsp;2019华人新闻界艺术创作联展暨两岸名家... </a> </li> 
+       <li class="ai_li6" style="list-style-type:none; font-size:12px;"> <a title="/32845/201906/14/190614174310762.shtml" href="/32845/201906/14/190614174310762.shtml" style=" text-decoration:none" target="_blank">&nbsp;在精神洗礼中迸发磅礴力量 </a> </li> 
+       <li class="ai_li7" style="list-style-type:none; font-size:12px;"> <a title="/32845/201906/14/190614174238638.shtml" href="/32845/201906/14/190614174238638.shtml" style=" text-decoration:none" target="_blank">&nbsp;休戚与共，为浩荡时代潮流贡献“上合力量” </a> </li> 
+       <li class="ai_li8" style="list-style-type:none; font-size:12px;"> <a title="/32845/201906/14/190614174223107.shtml" href="/32845/201906/14/190614174223107.shtml" style=" text-decoration:none" target="_blank">&nbsp;京张高铁：百年筑梦，续写新辉煌 </a> </li> 
+       <li class="ai_li9" style="list-style-type:none; font-size:12px;"> <a title="/32843/201906/14/190614174157369.shtml" href="/32843/201906/14/190614174157369.shtml" style=" text-decoration:none" target="_blank">&nbsp;锦绣中华&middot;大美山川|“中国最美的乡村”江... </a> </li> 
+       <!--新闻排行榜，按点击率end--> 
+      </ul> 
+     </div> 
+    </ul> 
+    <div class="ad2"> 
+     <p></p> 
+    </div> 
+    <div id="yslm"> 
+     <h2><a href="/32848/32848.shtml" target="_blank">专题</a></h2> 
+     <ul class="yslm"> 
+      <li class="selected"> <a href="http://news.workercn.cn/xjp190612/index.htm" target="_blank"><img src="/html/files/2019-06/11/20190611160137233208198.jpg" width="300" height="210"></a> <h2>专题</h2> <p class="mask"> <h3>习近平访问中亚两国并出席国际会议</h3> </p> </li> 
+      <li> <a href="http://news.workercn.cn/xjp190605/index.htm" target="_blank"><img src="/html/files/2019-06/03/20190603153355047275727.jpg" width="300" height="210"></a> <h2>专题</h2> <p class="mask"> <h3>习近平对俄罗斯进行国事访问</h3> </p> </li> 
+      <li> <a href="http://news.workercn.cn/bwcxljsm0606/index.html" target="_blank"><img src="/html/files/2019-06/06/20190606161124604441908.jpg" width="300" height="210"></a> <h2>专题</h2> <p class="mask"> <h3>不忘初心 牢记使命</h3> </p> </li> 
+      <li> <a href="http://news.workercn.cn/zl70n/index.htm" target="_blank"><img src="/html/files/2019-04/10/20190410102055305250671.jpg" width="300" height="210"></a> <h2>专题</h2> <p class="mask"> <h3>壮丽70年?奋斗新时代</h3> </p> </li> 
+      <li> <a href="http://news.workercn.cn/grrbewp/index.html" target="_blank"><img src="/html/files/2019-05/13/20190513082716430399695.jpg" width="300" height="210"></a> <h2>专题</h2> <p class="mask"> <h3>工人日报e网评</h3> </p> </li> 
+     </ul> 
+    </div> 
+   </div> 
+  </div> 
+  <p class="ad1"> &nbsp; </p>  
+  <!-- public area --> 
+  <div class="floatewm">
+    扫码关注 
+   <br> 
+   <img src="http://www.workercn.cn/html/files/2016-05/05/20160505091122915598118.jpg"> 
+   <br> 
+   <img src="http://www.workercn.cn/html/files/2016-05/05/20160505091015647472874.jpg"> 
+   <p></p>
+   <p>工人日报 <br>客户端 <br> <img src="http://www.workercn.cn/html/files/2016-05/05/ewm-grrb-pg.gif" width="74" height="74"> <span>苹果版</span> <br> <img src="http://www.workercn.cn/html/files/2016-05/05/ewm-grrb-az.gif" width="74" height="74"> <span>安卓版</span> </p>
+  </div>
+ </body>
+</html>
