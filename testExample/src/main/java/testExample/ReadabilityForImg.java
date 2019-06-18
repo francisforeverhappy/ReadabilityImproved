@@ -3,8 +3,10 @@ package testExample;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
@@ -17,6 +19,8 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import casia.ibasic.fusionsight.extractor.util.Utils;
+
 public class ReadabilityForImg {
 
     private static final String CONTENT_SCORE  = "readabilityContentScore";
@@ -24,6 +28,7 @@ public class ReadabilityForImg {
 
     private final Document mDocument;
     private String mBodyCache;
+    private ArrayList<String> pictext = new ArrayList<String>();
     
     // 构造方法
     public ReadabilityForImg(String html) {
@@ -50,6 +55,13 @@ public class ReadabilityForImg {
     public ReadabilityForImg(Document doc) {
         super();
         mDocument = doc;
+    }
+    
+    /*
+     * 获取图片列表
+     */
+    public List<String> getImgList(){
+    	return pictext;
     }
     
     /*
@@ -294,13 +306,15 @@ public class ReadabilityForImg {
         node.attr(IMG_SCORE, Integer.toString(0));
         /*
          * 根据标签给分，依照主流网站规律来看，一般p是img父标签，div是祖父标签
+         * 根据经验测试，目前基本都要扣5分
          */
         String tagName = node.tagName();
         if ("p".equalsIgnoreCase(tagName)) {
+            incrementImgScore(node, 7);
+        } else if ("div".equalsIgnoreCase(tagName)
+        		|| "span".equalsIgnoreCase(tagName)) {
             incrementImgScore(node, 5);
-        } else if ("div".equalsIgnoreCase(tagName)) {
-            incrementImgScore(node, 3);
-        } else if ("address".equalsIgnoreCase(tagName)
+        }else if ("address".equalsIgnoreCase(tagName)
                 || "ol".equalsIgnoreCase(tagName)
                 || "ul".equalsIgnoreCase(tagName)
                 || "dl".equalsIgnoreCase(tagName)
@@ -310,9 +324,8 @@ public class ReadabilityForImg {
                 || "form".equalsIgnoreCase(tagName)
                 || "td".equalsIgnoreCase(tagName)
                 || "blockquote".equalsIgnoreCase(tagName)
-                || "pre".equalsIgnoreCase(tagName)) {
-            incrementImgScore(node, -3);
-        } else if ("h1".equalsIgnoreCase(tagName)
+                || "pre".equalsIgnoreCase(tagName)
+                || "h1".equalsIgnoreCase(tagName)
                 || "h2".equalsIgnoreCase(tagName)
                 || "h3".equalsIgnoreCase(tagName)
                 || "h4".equalsIgnoreCase(tagName)
@@ -320,7 +333,21 @@ public class ReadabilityForImg {
                 || "h6".equalsIgnoreCase(tagName)
                 || "th".equalsIgnoreCase(tagName)
                 || "noscript".equalsIgnoreCase(tagName)) {
-            incrementImgScore(node, -5);
+            incrementImgScore(node, -10);
+        }else if ("a".equalsIgnoreCase(tagName)){
+        	incrementImgScore(node, -60);//基本判定不是  
+        	if(node.hasAttr("href") && node.absUrl("href").length() != 0){
+        		String imgName = node.absUrl("href");
+        		if (imgName.endsWith(".jpg") || imgName.endsWith(".jpeg")  
+        				|| imgName.endsWith(".gif")  
+                        || imgName.endsWith(".png")){
+        			
+        		}else{
+        			incrementImgScore(node, -150);
+        		}
+        	}
+        }else if("body".equalsIgnoreCase(tagName)){
+        	return;
         }
         /*
          * 根据style属性“text-align: center”，align="center"，class属性， 正文属性给分, display:none 扣分
@@ -338,7 +365,7 @@ public class ReadabilityForImg {
                 Patterns.RegEx.IMG_UNLIKELY_CANDIDATES).matcher(
                 		styleAttr);
             if(imgUnlikelyCandidatesMatcher.find()){
-                attrScore -= 10;
+                attrScore -= 200;
             }
         }
         
@@ -356,39 +383,28 @@ public class ReadabilityForImg {
         }
         
         /* 根据class属性加减分数 */
-        /* 根据标签class属性值计算得分: 匹配NEGATIVE减15分, 匹配POSITIVE 加15分*/
-        String className = node.className();
+        /* 根据标签class id属性值计算得分: 匹配NEGATIVE减15分, 匹配POSITIVE 加15分*/
+        String className = node.className() + node.id();
         if (!isEmpty(className)) {
             Matcher negativeMatcher = Patterns.get(Patterns.RegEx.NEGATIVE_IMG)
                     .matcher(className);
             Matcher positiveMatcher = Patterns.get(Patterns.RegEx.POSITIVE_IMG)
                     .matcher(className);
+            Matcher removeMatcher = Patterns.get(Patterns.RegEx.REMOVE_IMG)
+                    .matcher(className);
             if (negativeMatcher.find()) {
             	attrScore -= 15;
             }
             if (positiveMatcher.find()) {
             	attrScore += 15;
             }
-        }
-
-        /* 根据标签id属性值计算得分: 匹配NEGATIVE减15分, 匹配POSITIVE 加15分*/
-        String id = node.id();
-        if (!isEmpty(id)) {
-            Matcher negativeMatcher = Patterns.get(Patterns.RegEx.NEGATIVE_IMG)
-                    .matcher(id);
-            Matcher positiveMatcher = Patterns.get(Patterns.RegEx.POSITIVE_IMG)
-                    .matcher(id);
-            if (negativeMatcher.find()) {
-            	attrScore -= 15;
-            }
-            if (positiveMatcher.find()) {
-            	attrScore += 15;
+            if(removeMatcher.find()){
+            	attrScore -= 25;
             }
         }
         
         int contentScore = getContentScore(node);
-        
-        incrementImgScore(node, attrScore+contentScore);
+        incrementImgScore(node, attrScore + contentScore);
     }
     /* 
      * 初始化img标签的分数
@@ -400,6 +416,8 @@ public class ReadabilityForImg {
          * 1. 为src属性加分
          * 2. alt，title评分
          * 3. 检查长宽属性
+         * 4. 检查align属性
+         * 5. href 减分
          */
         
         /*
@@ -409,69 +427,85 @@ public class ReadabilityForImg {
          * 3. positive: content|photo
          * 
          */
-    	if(!node.tagName().equalsIgnoreCase("img")){
-    		System.out.println("非img标签出现！"+ node.tagName());
-    		return;
-    	}
     	
     	int imgScore = 0;
     	
     	String srcImg = node.attr("src");
+    	String imgTime = Utils.TIMEUTIL.getDateFromUrl(srcImg);
     	if (!isEmpty(srcImg)) {
             Matcher negativeMatcher = Patterns.get(Patterns.RegEx.NEGATIVE_IMG)
                     .matcher(srcImg);
             Matcher positiveMatcher = Patterns.get(Patterns.RegEx.POSITIVE_IMG)
                     .matcher(srcImg);
-            Matcher timeMatcher = Patterns.get(Patterns.RegEx.TIME_COARSE)
-            		.matcher(srcImg);
+            Matcher removeMatcher = Patterns.get(Patterns.RegEx.REMOVE_IMG)
+                    .matcher(srcImg);
             if (negativeMatcher.find()) {
             	imgScore -= 25;
             }
             if (positiveMatcher.find()) {
             	imgScore += 25;
             }
-            if(timeMatcher.find()){
-            	imgScore += 20;
+            if(removeMatcher.find()){
+            	imgScore -= 50;
             }
-        }else{
-        	imgScore -= 50;
+            /*
+             * 检测时间距离
+             */
+            if(!isEmpty(imgTime)){
+            	//System.out.println("get img time: "+imgTime);
+            	Date imgDate = string2Date(imgTime);
+            	//System.out.println("url: " + node.root().baseUri());
+            	String pubTime = new TimeUtil().getDateFromUrl(node.root().baseUri());
+            	if(!isEmpty(pubTime)){
+            		//System.out.println("get pub time: "+pubTime);
+            		Date pubDate = string2Date(pubTime);
+            		if(imgDate != null && pubDate != null){
+            			int differentDays = timeDifference(imgDate, pubDate);
+            			if(differentDays > 15){
+            				imgScore -= differentDays;
+            			}else if(differentDays >= 0 && differentDays < 3){
+            				imgScore += 30;
+            			}else if(differentDays >= 0 && differentDays < 7){
+            				imgScore += 15;
+            			}else if(differentDays >= 0){
+            				imgScore += 10;
+            			}
+            		}
+            	}else{
+            		
+            		Date date = new Date();
+            		if(imgDate != null && date != null){
+            			int differentDays = timeDifference(imgDate, date);
+            			if(differentDays >= 0 && differentDays < 3){
+            				imgScore += 30;
+            			}else if(differentDays >= 0 && differentDays < 7){
+            				imgScore += 15;
+            			}else if(differentDays >= 0){
+            				imgScore += 10;
+            			}
+            		}
+            	}
+            }
+        }else{// 没有src属性
+        	imgScore -= 500;
         }
     	
-    	String altAttr = node.attr("alt");
+    	String altAttr = node.attr("alt") + node.attr("title");
     	if (!isEmpty(altAttr)) {
             Matcher negativeMatcher = Patterns.get(Patterns.RegEx.NEGATIVE_IMG)
                     .matcher(altAttr);
             Matcher positiveMatcher = Patterns.get(Patterns.RegEx.POSITIVE_IMG)
                     .matcher(altAttr);
-            Matcher timeMatcher = Patterns.get(Patterns.RegEx.TIME_COARSE)
-            		.matcher(altAttr);
+            Matcher removeMatcher = Patterns.get(Patterns.RegEx.REMOVE_IMG)
+                    .matcher(srcImg);
             if (negativeMatcher.find()) {
             	imgScore -= 10;
             }
             if (positiveMatcher.find()) {
             	imgScore += 10;
             }
-            if(timeMatcher.find()){
-            	imgScore += 10;
-            }
-        }
-    	
-    	String titleAttr = node.attr("title");
-    	if (!isEmpty(titleAttr)) {
-            Matcher negativeMatcher = Patterns.get(Patterns.RegEx.NEGATIVE_IMG)
-                    .matcher(titleAttr);
-            Matcher positiveMatcher = Patterns.get(Patterns.RegEx.POSITIVE_IMG)
-                    .matcher(titleAttr);
-            Matcher timeMatcher = Patterns.get(Patterns.RegEx.TIME_COARSE)
-            		.matcher(titleAttr);
-            if (negativeMatcher.find()) {
-            	imgScore -= 10;
-            }
-            if (positiveMatcher.find()) {
-            	imgScore += 10;
-            }
-            if(timeMatcher.find()){
-            	imgScore += 10;
+            if(removeMatcher.find()){
+            	imgScore -= 20;
             }
         }
     	
@@ -482,23 +516,25 @@ public class ReadabilityForImg {
     	/*
     	 * TODO: 长宽有三种写法： 数字， 数字加px Px pX PX, 百分数，是百分数不要，去掉px
     	 */
-    	String width = node.attr("width");
-    	String height = node.attr("height");
+    	String width = node.attr("width").replaceAll("auto", "");
+    	String height = node.attr("height").replaceAll("auto", "");
     	if(!isEmpty(width) && !isEmpty(height) && width.indexOf("%") == -1 && height.indexOf("%") == -1){
     		String widthReplace = width.replaceAll("[pP][xX]", "");
     		String heightReplace = height.replaceAll("[pP][xX]", "");
     		int widthLength = Integer.parseInt(widthReplace);
     		int heightLength = Integer.parseInt(heightReplace);
     		if(widthLength < 100 && heightLength < 100){
-    			imgScore -= 30;
+    			imgScore -= 40;
     		}else if(widthLength < 100 || heightLength < 100){
-    			imgScore -= 20;
+    			imgScore -= 25;
     		}else if(widthLength < 150 && heightLength < 150){
-    			imgScore -= 15;
+    			imgScore -= 20;
     		}else if(widthLength < 150 || heightLength < 150){
-    			imgScore -= 7;
+    			imgScore -= 10;
+    		}else if(widthLength < 200 && heightLength < 200){
+    			imgScore -= 10;
     		}else if(widthLength > 300 && heightLength > 300){
-    			imgScore += 20;
+    			imgScore += 15;
     		}else if(widthLength > 300 || heightLength > 300){
     			imgScore += 10;
     		}
@@ -507,26 +543,85 @@ public class ReadabilityForImg {
     		String widthReplace = width.replaceAll("[pP][xX]", "");
     		int widthLength = Integer.parseInt(widthReplace);
     		if(widthLength < 100){
-    			imgScore -= 20;
+    			imgScore -= 25;
     		}else if(widthLength < 150){
-    			imgScore -= 10;
+    			imgScore -= 15;
     		}else if(widthLength > 400){
-    			imgScore += 10;
+    			imgScore += 15;
     		}
     	}else if(!isEmpty(height) && height.indexOf("%") == -1){
     		String heightReplace = height.replaceAll("[pP][xX]", "");
     		int heightLength = Integer.parseInt(heightReplace);
     		if(heightLength < 100){
-    			imgScore -= 20;
+    			imgScore -= 25;
     		}else if(heightLength < 150){
-    			imgScore -= 10;
+    			imgScore -= 15;
     		}else if(heightLength > 400){
-    			imgScore += 10;
+    			imgScore += 15;
     		}
+    	}else if((!isEmpty(width) && width.indexOf("%") >= 0) || (!isEmpty(height) && height.indexOf("%") >= 0)){
+    		imgScore -= 200;//基本判定不是图片
     	}
+    	 /*
+         * 根据align="center"给分
+         */
+    	 String alignAttr = node.attr("align");
+         if(!isEmpty(alignAttr)){
+         	Matcher imgCandidatesMatcher1 = Patterns.get(
+                     Patterns.RegEx.IMGPARENT_CANDIDATES).matcher(
+                     		alignAttr);
+             if(imgCandidatesMatcher1.find()){
+            	 imgScore += 10;
+             }
+             else{
+            	 imgScore -= 10;
+             }
+         }
+         
+         /*
+          * href 减分
+          */
+         if(node.hasAttr("href") && !isEmpty(node.attr("href"))){
+        	 imgScore -= 200;
+         }
     	
     	incrementImgScore(node, imgScore);
     }
+    
+    /*
+     * 将yyyy-mm-dd格式字符串转换成date
+     */
+    private static Date string2Date(String time){
+    	SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+		Date date = null;
+		try {
+			date= sdf.parse(time);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	
+    	return date;
+    	
+    }
+    
+    /*
+     * 比较两个date的天数差距
+     */
+    private static int timeDifference(Date date1, Date date2){
+    	int days = (int) ((date2.getTime() - date1.getTime()) / (1000*3600*24));
+        return days;    	
+    }
+    
+    private static Element checkStrong(Element node){
+    	if(node.tagName().equalsIgnoreCase("strong")){
+    		if(node.hasParent()){
+    			return node.parent();
+    		}
+    	}
+    	return node;
+    }
+    
     
 
     /**
@@ -635,99 +730,96 @@ public class ReadabilityForImg {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-        /*
-         * grabImg function（获取URL和在文中的offset）
-         * 方案一：直接拿articleContent里面所有的img标签，打分，测量深度
-         * 问题： 可能有图片在articleContent外（找例子看看来解决）；可能里面有的图片不是正文图片（打分，测量深度来解决）；
-         */
-        //dbg("Before grabing Image: "+ mDocument.html());
-        this.grabImg(mDocument);
-        // test
-        return mDocument;
+        
         
         
 
         /**
          * 计算最终的比例因子的出正文权重分数,并得出分数最高的元素 
          */
-//        Element topCandidate = null;
-//        for (Element candidate : candidates) {
-//        	/**
-//        	 * 根据链接密度调整最终正文候选标签的权重分数
-//        	 * 内容应具有相对较小的链接密度（5%或更小）
-//        	 */
-//            scaleContentScore(candidate, 1 - getLinkDensity(candidate));
-//            dbg("Candidate: (" + candidate.className() + ":" + candidate.id()
-//                    + ") with score " + getContentScore(candidate));
-//            if (topCandidate == null
-//                    || getContentScore(candidate) > getContentScore(topCandidate)) {
-//                topCandidate = candidate;
-//            }
-//        }
-//
-//        /**
-//         * 如果计算最高得分元素为空或元素是Body块,则新创建一个块元素并将原始HTML放入，重新初始化节点分数
-//         */
-//        if (topCandidate == null
-//                || "body".equalsIgnoreCase(topCandidate.tagName())) {
-//            topCandidate = mDocument.createElement("div");
-//            topCandidate.html(mDocument.body().html());
-//            mDocument.body().html("");
-//            mDocument.body().appendChild(topCandidate);
-//            initializeNode(topCandidate);
-//        }
-//
-//        /**
-//         * 遍历得分最高的元素, 判断该元素的同胞是否满足要求
-//         * 比如序言，内容
-//         */
-//        Element articleContent = mDocument.createElement("div");
-//        articleContent.attr("id", "readability-content");
-//        int siblingScoreThreshold = Math.max(10,
-//                (int) (getContentScore(topCandidate) * 0.2f));
-//        Elements siblingNodes = topCandidate.parent().children();
-//        for (Element siblingNode : siblingNodes) {
-//            boolean append = false;
-//
-//            dbg("Looking at sibling node: (" + siblingNode.className() + ":"
-//                    + siblingNode.id() + ")" + " with score "
-//                    + getContentScore(siblingNode));
-//
-//            if (siblingNode == topCandidate) {
-//                append = true;
-//            }
-//
-//            if (getContentScore(siblingNode) >= siblingScoreThreshold) {
-//                append = true;
-//            }
-//
-//            if ("p".equalsIgnoreCase(siblingNode.tagName())) {
-//                float linkDensity = getLinkDensity(siblingNode);
-//                String nodeContent = getInnerText(siblingNode, true);
-//                int nodeLength = nodeContent.length();
-//
-//                if (nodeLength > 80 && linkDensity < 0.25f) {
-//                    append = true;
-//                } else if (nodeLength < 80 && linkDensity == 0.0f
-//                        && nodeContent.matches(".*\\.( |$).*")) {
-//                    append = true;
-//                }
-//            }
-//
-//            if (append) {
-//                dbg("Appending node: " + siblingNode);
-//                articleContent.appendChild(siblingNode);
-//                continue;
-//            }
-//        }
-//
-//
-//        /*
-//         * 最后清理可疑节点
-//         */
-//        prepArticle(articleContent);
-//
-//        return articleContent;
+        Element topCandidate = null;
+        for (Element candidate : candidates) {
+        	/**
+        	 * 根据链接密度调整最终正文候选标签的权重分数
+        	 * 内容应具有相对较小的链接密度（5%或更小）
+        	 */
+            scaleContentScore(candidate, 1 - getLinkDensity(candidate));
+            dbg("Candidate: (" + candidate.className() + ":" + candidate.id()
+                    + ") with score " + getContentScore(candidate));
+            if (topCandidate == null
+                    || getContentScore(candidate) > getContentScore(topCandidate)) {
+                topCandidate = candidate;
+            }
+        }
+        /*
+         * grabImg function（获取URL）
+         * 方案一：直接拿html里面所有的img标签，打分
+         */
+        this.grabImg(mDocument);
+
+        /**
+         * 如果计算最高得分元素为空或元素是Body块,则新创建一个块元素并将原始HTML放入，重新初始化节点分数
+         */
+        if (topCandidate == null
+                || "body".equalsIgnoreCase(topCandidate.tagName())) {
+            topCandidate = mDocument.createElement("div");
+            topCandidate.html(mDocument.body().html());
+            mDocument.body().html("");
+            mDocument.body().appendChild(topCandidate);
+            initializeNode(topCandidate);
+        }
+
+        /**
+         * 遍历得分最高的元素, 判断该元素的同胞是否满足要求
+         * 比如序言，内容
+         */
+        Element articleContent = mDocument.createElement("div");
+        articleContent.attr("id", "readability-content");
+        int siblingScoreThreshold = Math.max(10,
+                (int) (getContentScore(topCandidate) * 0.2f));
+        Elements siblingNodes = topCandidate.parent().children();
+        for (Element siblingNode : siblingNodes) {
+            boolean append = false;
+
+            dbg("Looking at sibling node: (" + siblingNode.className() + ":"
+                    + siblingNode.id() + ")" + " with score "
+                    + getContentScore(siblingNode));
+
+            if (siblingNode == topCandidate) {
+                append = true;
+            }
+
+            if (getContentScore(siblingNode) >= siblingScoreThreshold) {
+                append = true;
+            }
+
+            if ("p".equalsIgnoreCase(siblingNode.tagName())) {
+                float linkDensity = getLinkDensity(siblingNode);
+                String nodeContent = getInnerText(siblingNode, true);
+                int nodeLength = nodeContent.length();
+
+                if (nodeLength > 80 && linkDensity < 0.25f) {
+                    append = true;
+                } else if (nodeLength < 80 && linkDensity == 0.0f
+                        && nodeContent.matches(".*\\.( |$).*")) {
+                    append = true;
+                }
+            }
+
+            if (append) {
+                dbg("Appending node: " + siblingNode);
+                articleContent.appendChild(siblingNode);
+                continue;
+            }
+        }
+
+
+        /*
+         * 最后清理可疑节点
+         */
+        prepArticle(articleContent);
+
+        return articleContent;
     }
     
     /*
@@ -736,7 +828,11 @@ public class ReadabilityForImg {
     public void grabImg(Element content){
     	Elements imgTag = content.getElementsByTag("img");
     	int ImgSize = imgTag.size();
-    	dbg("正文节点下一共有"+ ImgSize +"张图片");
+    	dbg("HTML一共有"+ ImgSize +"张图片");
+    	if(ImgSize == 0){
+    		return;
+    	}
+    	
     	/**
          * 遍历所有图片标签,将父节点的分数增加到自身身上
          * 分数是由class、id，src属性值
@@ -745,9 +841,29 @@ public class ReadabilityForImg {
 
         for (Element node : imgTag) {
         	candidates.add(node);
-            Element parentNode = node.parent();
-            Element grandParentNode = parentNode.parent();
-            Element greatGrandParentNode = grandParentNode.parent();
+        	Element parentNode = null, grandParentNode = null, greatGrandParentNode = null;
+        	if(node.hasParent()){
+        		parentNode = checkStrong(node.parent());
+        	}
+        	if(parentNode.hasParent())
+        		grandParentNode = checkStrong(parentNode.parent());
+            /*
+             * 检测两个标签属性是否相同
+             */
+            if(parentNode.tagName().equalsIgnoreCase(grandParentNode.tagName())
+            		&& parentNode.attributes() != null 
+            		&& parentNode.attributes().equals(grandParentNode.attributes())){
+            	grandParentNode = grandParentNode.parent();
+            }
+            if(grandParentNode.hasParent())
+            	greatGrandParentNode = grandParentNode.parent();
+            
+            if(greatGrandParentNode != null && greatGrandParentNode.tagName().equalsIgnoreCase(grandParentNode.tagName())
+            		&& greatGrandParentNode.attributes() != null 
+            		&& greatGrandParentNode.attributes().equals(grandParentNode.attributes())){
+            	greatGrandParentNode = greatGrandParentNode.parent();
+            }
+
 
             /* 初始化node元素的父级标签分数权重值  */
             if (!parentNode.hasAttr(IMG_SCORE)) {
@@ -760,22 +876,28 @@ public class ReadabilityForImg {
             }
 
 			  /* 初始化node元素的父级的父级的父级标签分数权重值  */
-      	  	if (!grandParentNode.hasAttr(IMG_SCORE)) {
-      	  		initializeImgScore(grandParentNode);
+      	  	if (!greatGrandParentNode.hasAttr(IMG_SCORE)) {
+      	  		initializeImgScore(greatGrandParentNode);
       	  	}
       	  
       	  	/* 初始化node元素的分数 */
       	  	if(!node.hasAttr(IMG_SCORE)){
       	  		node.attr(IMG_SCORE, Integer.toString(0));
-      	  		initImgTagScore(node);
+      	  		initImgTagScore(node);  
       	  	}
-            
+      	  	System.out.println("init: "+node.attr("src")+" : "+getImgScore(node));
             /*
              * 反其道而行之，将父级元素权重分数添加至img元素中
              */
             incrementImgScore(node, getImgScore(parentNode));
             incrementImgScore(node, getImgScore(grandParentNode));
             incrementImgScore(node, getImgScore(greatGrandParentNode) / 2);
+            if(getContentScore(greatGrandParentNode) == 0 && getContentScore(grandParentNode) == 0){
+            	if(getContentScore(greatGrandParentNode.parent()) > 0){
+            		incrementImgScore(node, getImgScore(greatGrandParentNode.parent()) / 4);
+            	}
+            }
+            System.out.println("add parent score: "+node.attr("src")+" : "+getImgScore(node));
         }
 
         /**
@@ -790,33 +912,65 @@ public class ReadabilityForImg {
                 topCandidate = candidate;
             }
         }
+        int topScore = getImgScore(topCandidate);
         dbg("TopCandidate: (" + topCandidate.attr("src")+ ":" + topCandidate.id()
-        + ") with score " + getImgScore(topCandidate));
+        + ") with score " + topScore);
+        if(topScore < 30){
+        	return ;
+        }
         
         /*
          * 与topCandidate同一父节点，祖父节点，曾祖父节点，同一深度加分
+         * 或者换成同一深度检测，视效果而定
          */
         // 曾祖父节点加5分，祖父加10分（猜测正文图片在某个节点下有共同的深度）
         Element parentNode = topCandidate.parent();
         Element grandParentNode = parentNode.parent();
-        Element greatGrandParentNode = grandParentNode.parent();
         
+        if(parentNode.tagName().equalsIgnoreCase(grandParentNode.tagName())
+        		&& parentNode.attributes() != null && parentNode.attributes().equals(grandParentNode.attributes())){
+        	grandParentNode = grandParentNode.parent();
+        }
+        Element greatGrandParentNode = grandParentNode.parent();
+        if(greatGrandParentNode.tagName().equalsIgnoreCase(grandParentNode.tagName())
+        		&& greatGrandParentNode.attributes() != null && greatGrandParentNode.attributes().equals(grandParentNode.attributes())){
+        	greatGrandParentNode = greatGrandParentNode.parent();
+        }
+        int addScoreTimes = 0;
         Elements greatGrandParentImgTag = greatGrandParentNode.getElementsByTag("img");
         for(Element node : greatGrandParentImgTag){
         	if(node.parent().parent().parent().equals(greatGrandParentNode)){
         		incrementImgScore(node, 5);
+        		addScoreTimes++;
         		if(node.parent().parent().equals(grandParentNode)){
         			incrementImgScore(node, 10);
         		}
         	}
         }
-        int topScore = getImgScore(topCandidate);
-        for(Element candidate : candidates){
-        	if(getImgScore(candidate) > 0.5 * getImgScore(topCandidate)){
-        		dbg("Candidate: (" + candidate.attr("src")+ ":" + candidate.id()
-        			+ ") with score " + getImgScore(candidate));
-        	}
+        if(addScoreTimes == 1){
+        	incrementImgScore(topCandidate, -15);
         }
+        
+        
+        if(topScore > 45){
+        	for(Element candidate : candidates){
+            	if(getImgScore(candidate) > 0.75 * getImgScore(topCandidate) && getImgScore(candidate) > 45){
+            		dbg("Candidate: (" + candidate.attr("src")+ ":" + candidate.id()
+            			+ ") with score " + getImgScore(candidate));
+            		if(!isEmpty(candidate.absUrl("src"))){
+            			pictext.add(candidate.absUrl("src")); 
+            		}          		
+            	}
+            }
+        }
+        
+        /*
+         * TODO： check if TopCandidate and selected candidates are the photos in the news
+         * Method: 
+         * 1. Whether img tag is between title and article and under same parent node
+         * 2. if image score under low threshold, drop them
+         * 3. if image score under high threshold, check the tag of topCandidate
+         */
         
         
 //
@@ -1128,7 +1282,7 @@ public class ReadabilityForImg {
         private static Pattern sImgParentsUnlikelyCandidatesRe;
         private static Pattern sPositiveImgRe;
         private static Pattern sNegativeImgRe;
-        private static Pattern sCoarseTimeRe;
+        private static Pattern sRemoveImgRe;
         
         
         private static final String REGEX_REPLACE_BRS = "(?i)(<br[^>]*>[ \n\r\t]*){2,}";
@@ -1140,7 +1294,7 @@ public class ReadabilityForImg {
 
         public enum RegEx {
             UNLIKELY_CANDIDATES, OK_MAYBE_ITS_A_CANDIDATE, POSITIVE, NEGATIVE, DIV_TO_P_ELEMENTS, VIDEO, 
-            IMGPARENT_CANDIDATES, IMG_UNLIKELY_CANDIDATES, POSITIVE_IMG, NEGATIVE_IMG, TIME_COARSE;
+            IMGPARENT_CANDIDATES, IMG_UNLIKELY_CANDIDATES, POSITIVE_IMG, NEGATIVE_IMG, REMOVE_IMG;
         }
 
         public static Pattern get(RegEx re) {
@@ -1166,7 +1320,7 @@ public class ReadabilityForImg {
                 if (sPositiveRe == null) {
                     sPositiveRe = Pattern
                             .compile(
-                                    "article|body|content|entry|hentry|page|pagination|post|text",
+                                    "article|body|content|entry|hentry|page|pagination|post|text|main",
                                     Pattern.CASE_INSENSITIVE);
                 }
                 return sPositiveRe;
@@ -1175,7 +1329,7 @@ public class ReadabilityForImg {
                 if (sNegativeRe == null) {
                     sNegativeRe = Pattern
                             .compile(
-                                    "combx|comment|contact|foot|footer|footnote|link|media|meta|promo|related|scroll|shoutbox|sponsor|tags|widget",
+                                    "combx|comment|contact|foot|footer|footnote|link|media|meta|promo|related|scroll|shoutbox|sponsor|tags|widget|share|scan",
                                     Pattern.CASE_INSENSITIVE);
                 }
                 return sNegativeRe;
@@ -1207,7 +1361,7 @@ public class ReadabilityForImg {
             case IMG_UNLIKELY_CANDIDATES: {
                 if (sImgParentsUnlikelyCandidatesRe == null) {
                 	sImgParentsUnlikelyCandidatesRe = Pattern.compile(
-                			"left|right|display(\\s)?:(\\s)?none",
+                			"display(\\s)?:(\\s)?none",
                             Pattern.CASE_INSENSITIVE);
                 }
                 return sImgParentsUnlikelyCandidatesRe;
@@ -1216,7 +1370,7 @@ public class ReadabilityForImg {
                 if (sPositiveImgRe == null) {
                     sPositiveImgRe = Pattern
                             .compile(
-                                    "content|photo|news",
+                                    "body|content|photo|news|text|article|entry|hentry|page|pagination|post|main",
                                     Pattern.CASE_INSENSITIVE);
                 }
                 return sPositiveImgRe;
@@ -1225,53 +1379,22 @@ public class ReadabilityForImg {
                 if (sNegativeImgRe == null) {
                     sNegativeImgRe = Pattern
                             .compile(
-                                    "logo|weixin|sina|weibo|qq|flashplayer|ad1|ad2|vote|left|right|点赞|分享",
+                                    "bar|combx|link|promo|related|scroll|share|shoutbox|widget",
                                     Pattern.CASE_INSENSITIVE);
                 }
                 return sNegativeImgRe;
             }
-            case TIME_COARSE: {
-                if (sCoarseTimeRe == null) {
-                	/*
-                	 * 1. 获取现在时间
-                	 * 2. 组成常见三种样式 201906 2019-06 2019/06 （五天前为五月份要考虑）
-                	 */
-                	String timePatterns = null;
-                	SimpleDateFormat sdf = new SimpleDateFormat();
-                    sdf.applyPattern("yyyy/MM/dd");
-                    Date date = new Date();// 获取当前时间 
-                    //System.out.println("现在时间：" + sdf.format(date));
-                    String[] dateStr = sdf.format(date).split("/");
-                    if(dateStr.length == 3){
-                    	int year = Integer.parseInt(dateStr[0]);
-                    	int month = Integer.parseInt(dateStr[1]);
-                    	int lastMonth = month - 1;
-                    	int lastYear = year;
-                    	if(lastMonth == 0){
-                    		lastMonth = 12;
-                    		lastYear = year - 1;
-                    	}
-                    	String lastMonthStr = null;
-                    	if(lastMonth < 10){
-                    		lastMonthStr = "0" + String.valueOf(lastMonth);
-                    	}else{
-                    		lastMonthStr = String.valueOf(lastMonth);
-                    	}
-                    	if(Integer.parseInt(dateStr[2]) < 5){
-                    		timePatterns = String.valueOf(year) +  "" + dateStr[1] + "|" + year + "-" + dateStr[1] + "|" + year + "/" + dateStr[1] + "|"
-                    				+ String.valueOf(lastYear) +  lastMonthStr + "|" + lastYear + "-" + lastMonthStr + "|" + lastYear + "/" + lastMonthStr;
-                    	}else{
-                    		timePatterns = String.valueOf(year) +  "" + dateStr[1] + "|" + year + "-" + dateStr[1] + "|" + year + "/" + dateStr[1];
-                    	}
-                    }
-                    //System.out.println("时间re：" + timePatterns);
-                    sCoarseTimeRe = Pattern
+            case REMOVE_IMG: {
+                if (sRemoveImgRe == null) {
+                	sRemoveImgRe = Pattern
                             .compile(
-                            		timePatterns,
+                                    "ad1|ad2|ads|comment|contact|flashplayer|foot|footer|footnote|icon|logo"
+                                    + "|media|meta|qq|qrcode|scan|sina|sponsor|tags|vote|weibo|weixin|点赞|分享",
                                     Pattern.CASE_INSENSITIVE);
                 }
-                return sCoarseTimeRe;
+                return sRemoveImgRe;
             }
+            
             }
             return null;
         }
@@ -1285,10 +1408,13 @@ public class ReadabilityForImg {
      */
     private static int getContentScore(Element node) {
         try {
-            return Integer.parseInt(node.attr(CONTENT_SCORE));
+        	if(node.attr(CONTENT_SCORE) != null){
+        		return Integer.parseInt(node.attr(CONTENT_SCORE));
+        	}
         } catch (NumberFormatException e) {
             return 0;
         }
+        return 0;
     }
     private static int getImgScore(Element node) {
         try {

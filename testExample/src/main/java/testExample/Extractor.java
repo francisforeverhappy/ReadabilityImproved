@@ -14,7 +14,6 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 public class Extractor {
-	//ÔØÈëÎÄ¼ş
 	public static Document getDocument(String news){
 		try{
 			//Document doc = Jsoup.parse(new URL(news).openStream(), "UTF-8", news);
@@ -27,18 +26,14 @@ public class Extractor {
 	}
 	
 	public static String getTitle(Document doc){
-		/*
-		 * µÚÒ»ÖÖ·½·¨£º »ùÓÚ±êÇ©title and h1
-		 * TODO: µÚ¶şÖÖ·½·¨£º ×î³¤¹«¹²×Ó´®Ëã·¨
-		 */
-		// »ñÈ¡ title and h1 tag
+		
 		Elements titleTag = doc.getElementsByTag("title");
 		Elements H1Tag = doc.getElementsByTag("H1");
 		
 		String title_text = null;
 		if(!titleTag.isEmpty() && !H1Tag.isEmpty()){//get title from tag title and h1
 			title_text= titleTag.first().text().trim();
-			// °´ÕÕ×Ö·û´®³¤¶È´Ó´óµ½Ğ¡ÅÅĞò
+			
 			Collections.sort(H1Tag, new Comparator<Element>(){			
 				@Override
 				public int compare(Element o1, Element o2) {
@@ -52,30 +47,30 @@ public class Extractor {
 				}			
 			});
 			for(Element h1tag : H1Tag){
-				// Ïû³ı
-				// ÅĞ¶Ïh1 ±êÇ©ÊÇ·ñºÍtitle±êÇ©ÓĞ¹Ø£º ÏàµÈ£¬×Ó¼¯£¿
+				
 				if(h1tag.text().length() == 0){
 					continue;
 				}
 				String h1text = h1tag.text().trim();
+				/*
+				 * æœ‰bug, http://fashion.huanqiu.com/pic/2019-06/2935738.html
+				 */
 				if(h1text.equals(title_text) || 
 						h1text.equals(title_text.substring(0, h1text.length()-1)) || 
 						h1text.indexOf(title_text) != -1){
 					return h1tag.text();
 				}
 			}
-			// ´ËÊ±H1±êÇ©ÓëtitleÎŞ¹Ø
-			System.out.println("titleÓë  h1ÎŞ¹Ø£º "+H1Tag.html());
+			//System.out.println("titleï¿½ï¿½  h1ï¿½Ş¹Ø£ï¿½ "+H1Tag.html());
 		}
-		else if(H1Tag.isEmpty() && !titleTag.isEmpty()){//Ã»ÓĞH1±êÇ©
+		else if(H1Tag.isEmpty() && !titleTag.isEmpty()){//Ã»ï¿½ï¿½H1ï¿½ï¿½Ç©
 			title_text= titleTag.first().text();
-			System.out.println("No h1 tag: " + title_text);
-			//TODO£º Ó¦Ê¹ÓÃ×î³¤¹«¹²×Ó´®·½·¨
+			//System.out.println("No h1 tag: " + title_text);
+			
 			return doc.title();
-		}else if(titleTag.isEmpty() && !H1Tag.isEmpty()){//Ã»ÓĞ title tag
+		}else if(titleTag.isEmpty() && !H1Tag.isEmpty()){//Ã»ï¿½ï¿½ title tag
 			System.out.println("no title tag!");
-		}else{//Á½ÖÖ±êÇ©¶¼Ã»ÓĞ
-			//TODO: ¿ÉÒÔ¸ù¾İkeywords£¬ ×Ö·û³¤¶ÈÀ´Ë¼¿¼
+		}else{
 			System.out.println("no title and h1 tag!");
 		}
 		return null;
@@ -91,14 +86,14 @@ public class Extractor {
 		for(String news: fileurl){
 			Document doc = getDocument(news);
 			if(doc != null){
-				System.out.println("succeed to get doc " + doc.title());
+				System.out.println("succeed to get doc " + doc.title() + " ;\nurl: "+ news);
 			}else{
 				System.out.println("failed to get doc");
 			}
-			String title = getTitle(doc);
-			if(title != null){
-				System.out.println("title: " + title);
-			}
+//			String title = getTitle(doc);
+//			if(title != null){
+//				System.out.println("title: " + title);
+//			}
 			Document newDoc = doc.clone();
 //			try {
 //				File newsFile = new File("test/newsHTML.txt");
@@ -106,9 +101,12 @@ public class Extractor {
 //			} catch (IOException e) {
 //				e.printStackTrace();
 //			}
-			//System.out.println("Î´´¦ÀíÇ°html: " + newDoc.html());
+			long startTime=System.currentTimeMillis();
 			ReadabilityForImg imgRead = new ReadabilityForImg(newDoc);
 			imgRead.init();
+			long endTime=System.currentTimeMillis();
+
+			System.out.println("å½“å‰ç¨‹åºè€—æ—¶ï¼š"+(endTime-startTime)+"ms");
 //			try {
 //				File newsFile = new File("test/newsHTML.txt");
 //				FileUtils.writeStringToFile(newsFile, newDoc.html(), false);
@@ -116,6 +114,12 @@ public class Extractor {
 //				e.printStackTrace();
 //			}
 			System.out.println("\n*****************************************************\n");
+			List<String> imgList = imgRead.getImgList();
+			for(String img: imgList){
+				System.out.println("picture: "+img);
+			}
+			System.out.println("\n*****************************************************\n");
+			//break;
 		}
 	}
 }
