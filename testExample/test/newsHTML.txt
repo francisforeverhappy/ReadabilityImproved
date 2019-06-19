@@ -1,171 +1,221 @@
-<!DOCTYPE html SYSTEM "http://www.fsmtag.org/dtd/xhtml1-strict-fsmtag-4.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html>
  <head> 
-  <meta http-equiv="Content-Type" content="text/html; charset=gb2312"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"> 
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge"> 
-  <meta name="robots" content="all"> 
-  <title>ϰ��ƽ��������˹̹ý�巢����������-�й�����-�й���</title> 
-  <meta name="keywords" content="�й���,�����ձ�,�й�����,��������,ͷ��Ҫ��,��ί,����,̨��,���,����,����,ͼƬ,ͼ��,ר��,ʱ��,ʱ��,��������,����Ҫ��,��ᷨ��,�۽�,����,�Ļ�����,���ӵ�,���,����,ר��,����,����,��̳,ͼƬ,����,����,����,����,У԰,����,����,����"> 
-  <meta name="description" content="�й������ǹ�������������վ�й��������ۺ�������Ѷ�Ż�,Ҳ���й���������Ƶ��,ÿ��24СʱΪ�����������������ڡ����ʼ�������š�"> 
-  <meta name="author" content="�й�����">    
-  <!--[if IE 6]>
-<script type="text/javascript" src="http://www.workercn.cn/sites/main/2014szqh/js/png.js"></script>
-<script>
-DD_belatedPNG.fix('*');
-</script>
-<![endif]-->  
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <meta charset="UTF-8"> 
+  <meta content="width=device-width,user-scalable=no" name="viewport"> 
+  <meta name="keywords" content="新华全媒头条,新华网,中国,2019"> 
+  <meta name="”format-detection”" content="”telephone=no”"> 
+  <meta content="yes" name="apple-mobile-web-app-capable"> 
+  <title>藏区“感恩连”</title>   
+  <!-- bxSlider Javascript file -->  
+  <!-- bxSlider CSS file -->      
  </head> 
- <body> 
-  <div class="ad1"> 
-   <div style="MARGIN-TOP: 20px" align="center"> 
-    <a href="http://news.workercn.cn/zl70n/index.htm" target="_blank"><img style="HEIGHT: 90px; BORDER-TOP-COLOR: ; WIDTH: 1000px; BORDER-LEFT-COLOR: ; BORDER-BOTTOM-COLOR: ; FILTER: none; BORDER-RIGHT-COLOR: " border="0" hspace="0" alt="" src="http://news.workercn.cn/html/files/2019-04/10/20190410103318378547572.jpg" width="1000" height="90"></a> 
-   </div> 
-  </div> 
-  <div class="head"> 
-   <h1 class="logo"><a href="http://news.workercn.cn/"><img src="/sites/sz/new/images/logo.png" width="107" height="38" alt="�й�����"></a></h1> 
-   <h2 class="sub"><a href="/32841/32841.shtml">Ҫ��</a></h2> 
-   <p class="search"> 
-    <form method="get" action="http://search.workercn.cn/search/app-info/search-ajax.jsp" target="_blank" accept-charset="utf-8" onsubmit="return ncheck(this);"> 
-     <input type="text" class="search1" name="q" placeholder="������ؼ���"> 
-     <input type="image" class="search2" src="/sites/sz/new/images/search.gif" width="37" height="24"> 
-     <input type="hidden" class="sbutton" name="b1"> 
-    </form> </p> 
-  </div> 
-  <p class="line1"></p> 
-  <div class="container main"> 
-   <div class="left"> 
-    <h1 class="ctitle">ϰ��ƽ��������˹̹ý�巢����������</h1> 
-    <p class="signdate"> <span>2019-06-12 13:03:55</span>�� <span>�»���</span> </p> 
-    <div class="ccontent" readabilitycontentscore="93"> 
-     <span readabilitycontentscore="137"> 
-      <!--Content_Start--><p>�����»��籱��6��12�յ� 6��12�գ��ڳ�ϯ�����໥Э�������δ�ʩ�������η�Ტ��������˹̹���͹����й��·���ǰϦ��������ϯϰ��ƽ��������˹̹�����񱨡��������߶�������ͨѶ�緢����Ϊ��Я�ֹ��������Ѻ��»Ի͡����������¡��������£�</p> <p align="center"><strong><span>Я�ֹ��������Ѻ��»Ի�</span></strong></p> <p align="center"><strong><span>�л����񹲺͹���ϯ��ϰ��ƽ</span></strong></p> <p>����������Ұ����ʤ�����������Ǳ��������������������Ȼ������ʱ�ڣ�Ӧ��������ͳ���룬�Ҽ������Ѻõ�������˹̹���й��·��ʡ�5��ǰ���ҵ�һ�η���������˹̹������׳�����˵�ɽ�����ƾ�Ѥ�õ��Ļ������鴾�ӵ���������������ö���̵�ӡ�󡣼����ٴ�̤����Ƭ���ϵ����أ���������ÿ͵�������˹̹���ѣ��ҳ����ڴ���</p> <p>�����й���������˹̹ɽˮ���������������Ѻý���ԴԶ������2000����ǰ���й���������������֮�ã�������ΰ���˿��֮·����������������ʷ�������˻������¡���������ͨ���ޣ���ѧ��������������Ƭ���������ϣ��������ʡ������³϶��������Ѻ��㼣����Ī�ᡢ³�����������˹̹��ʷ�Ļ����˵Ĺ���Ҳ���л���ش��̣������˶��˵���Ӱ��Ϊ��������������ٸ�����ǡ�����ǧ�����������������������ͬΡ�����������׶���ԭ��������Ʊ�ö���ҡ������ʱ����Ǩ���ı䡣</p> <p>����27��ǰ���й����ȳ���������˹̹���������������⽻��ϵ�����������Ѻû������µĲ���������27��������������ʼ���໥���Ρ��˴����أ��ڸ�����չ�˻����������ڹ�����������˲�ͬ�ƶȡ���ͬ��������ͬ��ģ�����Ѻú����ĵ䷶��</p> <p>�����D�Dƽ�Ȼ���ʹ�����Ѻ�������ʯ���й�����˵���������ѽ����Զ����š�������������ȫ��ս�Ի���ϵ�Ļ�ʯ�����ǻ��ڻ��ţ������ɹ������ʷ�����ı߽����⣬495����Ĺ�ͬ�߽��Ϊ�����������������������Ŧ����˫�����漰�˴˺���������ش�������ʼ���໥���⡢�໥֧�֡������ѳ�Ϊɽˮ�����ĺ��ھӡ���ϻ��ŵĺ����ѡ�������Ӯ�ĺû�顢�˴˷��ֵĺ��ֵܡ�</p> <p>�����D�D������Ӯʹ�����Ѻó�������������������һ��һ·����������ǰ�С�������˹̹��һ��ͬ�й�ǩ�𹲽�˿��֮·���ô���������¼����������ίԱ�ᣬ˫����ͬʵʩ��һϵ�о��б�־�ԵĴ��ͺ�����Ŀ�����壭�ߺմ�����·�������Ĺ�ͨ��ʹ������˹̹�ϱ��������·���ͨ;�����б��ȵ糧�Ľ��ɣ���������˹̹�׶�����ȱ���Ϊ����ʷ������ֱϽ��500ǧ�������ߵĿ�����������������˹̹���������ȶ��ԺͰ�ȫ�ԡ�ˮ�೧�����ͳ���ũҵ��֯��ҵ԰����ҵұ����ҵ԰����Ŀ˳��ʵʩ����Ϊ������˹̹��ҵ���ļ��������й��ѳ�Ϊ������˹̹���Ͷ����Դ������Ҫó�׻�顣δ�����꣬����ó�׶ͻ��30����Ԫ��ʵ������������������Я���߳�һ�����ƻ�������ı��չ���������ٵĵ�·��</p> <p>�����D�D������ͨʹ�����Ѻ������ഫ���������ȡ�����������˹̹�ȡ���������εȻ�ɷ硣�й�������ѧ��������������רҵ��������˹̹�о����ģ���������ѧԺ���������ӿ�����������˹̹��չ�����ѧ����������ǰ����������ͳ��������ʷ��Ӱ�е����������塷���İ��ڻ����淢�У�Ϊ�й������˽�������˹̹�ṩ�����ӽǡ��ϸ��£���������˹̹�Ļ��ڡ��ڱ������������سɹ����У����й������ٴ�������������˹̹�Ļ�������������������������һ�����������������Ѻø����������ġ�</p> <p>�����������������ٰ���δ��֮���֣���ƽ�뷢չ��Ȼ��ʱ�����⣬���������塢��������������У����������еĲ�ȷ���������ࡣ����ȫ��ս�Ի���ϵ��չ�������ѵõ���ʷ������Ҳ����ǰ��δ�еĸ�����ս���з�Ըͬ����Я�ֺ������Ѻû�������ӭ��ս��</p> <p>��������Ҫ����߹�ͨ����ս�Ը߶Ⱥͳ�Զ�Ƕȶ�������ϵ��չ���ö�����ơ����и߲㽻������ǿ��������ᡢ�������ط�������������������漰�˴˺���������ش�����������໥����ᶨ֧�֣���ʵ������ϵ������Զ�����λ�����</p> <p>��������Ҫ���ƹ�����һ��һ·���Ĺ��ʻ�����ƽ�Ȼ����Ļ�������չ�����ռ䣬��ս���Դ���ĿΪ�ص㣬���ȷ�չ��Դ����ͨ��ũҵ����ҵ�������������������ó��Ͷ�ʣ���ӭͨ���й����ʽ��ڲ������ƽ̨����Ի����ڣ��������ݷḻ����Ч�������������ڵ���ʵ������֡�</p> <p>��������Ҫ�ƽ�������ͨ������Խ�ѧ���������롢���ŷ������ﱣ����Ӱ�������ȷ�������������������ƾ������ڽ����ڻ��и��Ӷ�ʡ�����Ҫ�����������в����������ӣ����������Ѻ���ҵ�Ӱ��ˣ��������Ѻ�н���ഫ��</p> <p>��������Ҫȫ�������������������Ϳ������֯������������簲ȫ���������������ά�������ͱ�������ȫ�ȶ���</p> <p>��������Ҫ��ǿ�ڹ��������е�ս��Э����������Ϲ����Ϻ�������֯�����ŵȶ��ƽ̨��Э����ϣ�ά��������������ó�����ƣ����Ե�������Ͱ����о���Ϊ�ƶ�ȫ��������ϵ�����ƺͱ��������иŬ����</p> <p>�������ų���27������˳Ӧʱ����չ�����������������������ź�Э����ά��������ȫ�ȶ���Ϊ�ٽ����޺�ƽ�뷢չ�����������ס�������2014���Ϻ�����ϣ���������й�ͬ���ۺϡ��������ɳ������°�ȫ�ۣ�����̽�����������ص�͸�����ͬ����İ�ȫ�ͷ�չ��·���õ�����������Ӧ��5���������������ḻ���ź��������ʵ���ź����ں����������ŷ�������̳������ίԱ�ᡢʵҵ��ίԱ�ᣬ����ͬ���Ϲ����Ϻ�������֯�ȶ�߻��ƺ������������������Ź���Ӱ������</p> <p>����������˹̹����������ϯ��������Ϊ�ƶ����ŷ�չ�����������ס��з�Ըͬ������������Ա��һ�����Զ��б���Ϊ����㣬�ƶ����ź�������������̨�ף�Ϊ�ٽ����޺����簲ȫ�ͷ�չ���������ס�</p> <p>�����й�������Ի��������С����Ϊ���ɡ���������˹̹���ｲ������־��������Ҳ�ܰѴ�ɽ���ߡ����з�Ըͬ����Я��Ŭ�����Գ�֮�Ժ�����㾫�񣬹��������Ѻ��»Ի͡�</p> 
-      <!--Content_End--></span> 
+ <body readabilityContentScore="2">
+  <!--导航条--> 
+  <div class="top"> 
+   <div class="top_con"> 
+    <div class="left fl"> 
+     <a href="http://www.xinhuanet.com/politics/qmtt/index.htm" target="_blank"><img src="images/logo222.png"></a> 
     </div> 
-    <div class="function"> 
-     <p class="editor"> �༭�� <span>������</span> </p> 
-     <p class="share"></p> 
-    </div> 
-    <p class="ad3"> &nbsp; </p> 
-    <p class="ad3"> &nbsp; </p> 
-    <h2><span>����Ķ�</span></h2> 
-    <div class="content"> 
-     <ul> 
-      <li><a href="/619/201409/17/140917172239702.shtml" target="_blank">��ʵ���� �����й��ܱ��⽻</a></li> 
-      <li><a href="/607/201708/31/170831213833392.shtml" target="_blank">ϰ��ƽͬ������˹̹��ͳ�����ɾ��л�̸ ��</a></li> 
-      <li><a href="/32841/201806/09/180609195555194.shtml" target="_blank">ϰ��ƽ���������˹̹��ͳ������</a></li> 
-      <li><a href="/32841/201810/12/181012000211317.shtml" target="_blank">���ǿ��������˹̹ý�巢����������</a></li> 
-      <li><a href="/32843/201810/15/181015141600649.shtml" target="_blank">������ʵ����Ϊ��һ��һ·�������ṩ�¾���</a></li> 
-      <li><a href="/32841/201904/28/190428161650167.shtml" target="_blank">ϰ��ƽ���������˹̹��ͳ������</a></li> 
-      <li><a href="/32845/201906/10/190610050807041.shtml" target="_blank">�������� ������������δ��</a></li> 
-      <li><a href="/32842/201906/10/190610131326094.shtml" target="_blank">�⽻����ϰ��ƽ��ϯ���ʼ�������������ϯ�Ϻ���֯�����ŷ����д����</a></li> 
-     </ul> 
-    </div> 
-    <div class="ad3"> 
-     <p>&nbsp; </p> 
-    </div> 
-    <p id="SOHUCS" sid="�뽫�˴��滻Ϊ����SourceID�����"></p> 
-    <div class="ad3"> 
-     <p>&nbsp; </p> 
-    </div> 
-    <h2><span><a href="/32846/32846.shtml" target="_blank">����ͼƬ</a></span></h2> 
-    <div class="jctk"> 
-     <ul> 
-      <li> 
-       <div> 
-        <a href="/32846/201906/12/190612103139358.shtml" target="_blank"><img src="/html/files/2019-06/12/20190612103138495270951.jpg" width="210" height="127"></a> 
-       </div> <h3><a href="/32846/201906/12/190612103139358.shtml" target="_blank">����������Ϊȫ�򴬲�������Ⱦ���ι����й�����</a></h3> </li> 
-      <li> 
-       <div> 
-        <a href="/32846/201906/12/190612100753364.shtml" target="_blank"><img src="/html/files/2019-06/12/20190612100753230224953.jpg" width="210" height="127"></a> 
-       </div> <h3><a href="/32846/201906/12/190612100753364.shtml" target="_blank">�����ڡ����顱�ʹ��������� ײ�Ϻ��¾ֹ���</a></h3> </li> 
-      <li> 
-       <div> 
-        <a href="/32846/201906/12/190612072015615.shtml" target="_blank"><img src="/html/files/2019-06/12/20190612072015314782699.jpg" width="210" height="127"></a> 
-       </div> <h3><a href="/32846/201906/12/190612072015615.shtml" target="_blank">��������¹㶫��Դ7������ 1��ʧ��</a></h3> </li> 
-      <li> 
-       <div> 
-        <a href="/32846/201906/12/190612072007000.shtml" target="_blank"><img src="/html/files/2019-06/12/20190612072006556703776.jpg" width="210" height="127"></a> 
-       </div> <h3><a href="/32846/201906/12/190612072007000.shtml" target="_blank">ѩɽ�����������й�·��</a></h3> </li> 
-      <li> 
-       <div> 
-        <a href="/32846/201906/12/190612071954933.shtml" target="_blank"><img src="/html/files/2019-06/12/20190612071954426679648.jpg" width="210" height="127"></a> 
-       </div> <h3><a href="/32846/201906/12/190612071954933.shtml" target="_blank">����ũæ</a></h3> </li> 
-      <li> 
-       <div> 
-        <a href="/32846/201906/12/190612071948608.shtml" target="_blank"><img src="/html/files/2019-06/12/20190612071948273551556.jpg" width="210" height="127"></a> 
-       </div> <h3><a href="/32846/201906/12/190612071948608.shtml" target="_blank">�ˡ��塱��ǰ�� �����µ��ǨD�D�Ϻ���֯�ൺ������ൺ�ӱ�</a></h3> </li> 
-     </ul> 
+    <div class="right fr"> 
+     <p><a href="http://www.news.cn/" target="_blank">新华网</a>出品</p>  
     </div> 
    </div> 
-   <div class="right"> 
-    <div class="ad2"> 
-     <a href="http://news.workercn.cn/bwcxljsm0606/index.html" target="_blank"><img style="HEIGHT: 250px; BORDER-TOP-COLOR: ; WIDTH: 300px; BORDER-LEFT-COLOR: ; BORDER-BOTTOM-COLOR: ; FILTER: none; BORDER-RIGHT-COLOR: " border="0" hspace="0" alt="" src="http://news.workercn.cn/html/files/2019-06/06/20190606161124604441908.jpg" width="300" height="250"></a> 
-    </div> 
-    <h2><a href="/32846/32846.shtml" target="_blank">ͼƬ</a></h2> 
-    <ul class="imglist"> 
-     <li> <a href="/32846/201906/12/190612103139358.shtml" target="_blank"><img src="/html/files/2019-06/12/20190612103138495270951.jpg" width="140" height="85"></a> <h3><a href="/32846/201906/12/190612103139358.shtml" target="_blank">����������Ϊȫ�򴬲�������Ⱦ���ι����й�����</a></h3> </li> 
-     <li> <a href="/32846/201906/12/190612100753364.shtml" target="_blank"><img src="/html/files/2019-06/12/20190612100753230224953.jpg" width="140" height="85"></a> <h3><a href="/32846/201906/12/190612100753364.shtml" target="_blank">�����ڡ����顱�ʹ��������� ײ�Ϻ��¾ֹ���</a></h3> </li> 
-    </ul> 
-    <ul class="imglist"> 
-     <li> <a href="/32846/201906/12/190612072015615.shtml" target="_blank"><img src="/html/files/2019-06/12/20190612072015314782699.jpg" width="140" height="85"></a> <h3><a href="/32846/201906/12/190612072015615.shtml" target="_blank">��������¹㶫��Դ7������ 1��ʧ��</a></h3> </li> 
-     <li> <a href="/32846/201906/12/190612072007000.shtml" target="_blank"><img src="/html/files/2019-06/12/20190612072006556703776.jpg" width="140" height="85"></a> <h3><a href="/32846/201906/12/190612072007000.shtml" target="_blank">ѩɽ�����������й�·��</a></h3> </li> 
-    </ul> 
-    <ul class="imglist"> 
-     <li> <a href="/32846/201906/12/190612071954933.shtml" target="_blank"><img src="/html/files/2019-06/12/20190612071954426679648.jpg" width="140" height="85"></a> <h3><a href="/32846/201906/12/190612071954933.shtml" target="_blank">����ũæ</a></h3> </li> 
-     <li> <a href="/32846/201906/12/190612071948608.shtml" target="_blank"><img src="/html/files/2019-06/12/20190612071948273551556.jpg" width="140" height="85"></a> <h3><a href="/32846/201906/12/190612071948608.shtml" target="_blank">�ˡ��塱��ǰ�� �����µ��ǨD�D�Ϻ���֯�ൺ������ൺ�ӱ�</a></h3> </li> 
-    </ul> 
-    <div class="ad2"> 
-     <a href="http://news.workercn.cn/2019whwdzgyqzg/index.htm" target="_blank"><img style="HEIGHT: 250px; BORDER-TOP-COLOR: ; WIDTH: 300px; BORDER-LEFT-COLOR: ; BORDER-BOTTOM-COLOR: ; FILTER: none; BORDER-RIGHT-COLOR: " border="0" hspace="0" alt="" src="http://news.workercn.cn/html/files/2019-04/02/20190402160631046276478.jpg" width="300" height="250"></a> 
-    </div> 
-    <h2><a href="/32847/32847.shtml" target="_blank">ͼ��</a></h2> 
-    <ul class="imglist"> 
-     <li> <a href="/32847/201906/11/190611195636130.shtml" target="_blank"><img src="/html/files/2019-06/11/20190611195747194591537.jpg" width="140" height="85"></a> <h3><a href="/32847/201906/11/190611195636130.shtml" target="_blank">һͼ��������������ϵͳΪҽ����Ա������ʩ</a></h3> </li> 
-     <li> <a href="/32847/201906/10/190610212421162.shtml" target="_blank"><img src="/html/files/2019-06/10/20190610212547561443675.jpg" width="140" height="85"></a> <h3><a href="/32847/201906/10/190610212421162.shtml" target="_blank">һͼǰհϰ��ƽ��ϯ������˹˹̹��������˹̹֮�� </a></h3> </li> 
-    </ul> 
-    <h2><a href="#" target="_blank">����</a></h2> 
-    <ul class="top10"> 
-     <div> 
-      <ul> 
-       <li class="ai_li0" style="list-style-type:none; font-size:12px;"> <img class="icon" src="/sites/gj/ufile/1.gif" border="0"> <a title="/32847/201906/14/190614175855303.shtml" href="/32847/201906/14/190614175855303.shtml" style=" text-decoration:none" target="_blank">&nbsp;��̬����ִ���������ƶȡ� </a> </li> 
-       <li class="ai_li1" style="list-style-type:none; font-size:12px;"> <img class="icon" src="/sites/gj/ufile/2.gif" border="0"> <a title="/32843/201906/14/190614175328489.shtml" href="/32843/201906/14/190614175328489.shtml" style=" text-decoration:none" target="_blank">&nbsp;5�·��й���ҵ����ֵ����5% �߼�������... </a> </li> 
-       <li class="ai_li2" style="list-style-type:none; font-size:12px;"> <img class="icon" src="/sites/gj/ufile/3.gif" border="0"> <a title="/32844/201906/14/190614175313004.shtml" href="/32844/201906/14/190614175313004.shtml" style=" text-decoration:none" target="_blank">&nbsp;��Ͽ����������11��������¯����ͼ�� </a> </li> 
-       <li class="ai_li3" style="list-style-type:none; font-size:12px;"> <a title="/32843/201906/14/190614174804377.shtml" href="/32843/201906/14/190614174804377.shtml" style=" text-decoration:none" target="_blank">&nbsp;�������Ű켯���������ϡ���ɫ�顱��Ϣ Ϊ... </a> </li> 
-       <li class="ai_li4" style="list-style-type:none; font-size:12px;"> <a title="/32843/201906/14/190614174713657.shtml" href="/32843/201906/14/190614174713657.shtml" style=" text-decoration:none" target="_blank">&nbsp;���߽�����졿�޼�ƺ�壺�ر���ƶæ �߽�... </a> </li> 
-       <li class="ai_li5" style="list-style-type:none; font-size:12px;"> <a title="/32844/201906/14/190614174524839.shtml" href="/32844/201906/14/190614174524839.shtml" style=" text-decoration:none" target="_blank">&nbsp;2019�������Ž�����������չ����������... </a> </li> 
-       <li class="ai_li6" style="list-style-type:none; font-size:12px;"> <a title="/32845/201906/14/190614174310762.shtml" href="/32845/201906/14/190614174310762.shtml" style=" text-decoration:none" target="_blank">&nbsp;�ھ���ϴ���бŷ��������� </a> </li> 
-       <li class="ai_li7" style="list-style-type:none; font-size:12px;"> <a title="/32845/201906/14/190614174238638.shtml" href="/32845/201906/14/190614174238638.shtml" style=" text-decoration:none" target="_blank">&nbsp;�����빲��Ϊ�Ƶ�ʱ���������ס��Ϻ������� </a> </li> 
-       <li class="ai_li8" style="list-style-type:none; font-size:12px;"> <a title="/32845/201906/14/190614174223107.shtml" href="/32845/201906/14/190614174223107.shtml" style=" text-decoration:none" target="_blank">&nbsp;���Ÿ������������Σ���д�»Ի� </a> </li> 
-       <li class="ai_li9" style="list-style-type:none; font-size:12px;"> <a title="/32843/201906/14/190614174157369.shtml" href="/32843/201906/14/190614174157369.shtml" style=" text-decoration:none" target="_blank">&nbsp;�����л�&middot;����ɽ��|���й���������塱��... </a> </li> 
-       <!--�������а񣬰������end--> 
-      </ul> 
+  </div> 
+  <!--封面标题图--> 
+  <div class="body_bg"> 
+   <img src="images/bg.jpg?v=702"> 
+  </div> 
+  <!--自适应width=600--> 
+  <div id="div2"> 
+   <p id="div2_con"></p> 
+   <div id="back"> 
+    <p>【返回】</p> 
+   </div> 
+  </div> 
+  <!--div2,end--> 
+  <div id="share"> 
+   <p class="nc_icon1">一键分享</p> 
+   <div class="share-con"> 
+    <a title="复制链接" href="javascript:void(0)" onclick="copyLink()"><span class="copylink"></span></a> 
+    <a title="分享到腾讯微博" href="javascript:void(0)" onclick="postToWb();"><span class="tengxunweibo"></span></a> 
+    <a title="分享到新浪微博" href="javascript:void(0);"><span class="xinlang"></span></a> 
+    <a title="分享到搜狐微博" href="javascript:void((function(s,d,e,r,l,p,t,z,c){var f='http://t.sohu.com/third/post.jsp?',u=z||d.location,p=['&amp;url=',e(u),'&amp;title=',e(t||d.title),'&amp;content=',c||'gb2312','&amp;pic=',e(p||'')].join('');function%20a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=660,height=470,left=',(s.width-660)/2,',top=',(s.height-470)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,'','','','','','utf-8'));"><span class="sohu"></span></a> 
+    <a title="分享到网易微博" href="javascript:void(0);"><span class="wangyi"></span></a> 
+    <a title="分享到Qzone空间" href="javascript:void(0);"><span class="qqzone"></span></a> 
+    <a title="分享到朋友社区" href="javascript:void(0);"><span class="qqpengyou"></span></a> 
+    <a title="分享到人人网" href="javascript:void(0);"><span class="renren"></span></a> 
+    <a title="分享到微信" href="javascript:void(0);"><span class="kaixin"></span></a> 
+    <a title="分享到淘江湖" href="javascript:void(0);"><span class="taojianghu"></span></a> 
+    <a title="分享到豆瓣" href="javascript:void(0);"><span class="douban"></span></a> 
+    <a title="分享到百度收藏" href="javascript:void(0);"><span class="baidusoucang"></span></a> 
+   </div> 
+  </div> 
+  <div class="main"> 
+   <!--左侧悬浮导航-->  
+   <!--主打稿--> 
+   <div id="zdg"> 
+    <!--模块标题--> 
+    <div class="main_head"> 
+     <div class="fl"> 
+      <p class="txt">主打稿</p> 
      </div> 
-    </ul> 
-    <div class="ad2"> 
-     <p></p> 
+     <div class="fr"> 
+      <p>2019年6月18日</p> 
+     </div> 
     </div> 
-    <div id="yslm"> 
-     <h2><a href="/32848/32848.shtml" target="_blank">ר��</a></h2> 
-     <ul class="yslm"> 
-      <li class="selected"> <a href="http://news.workercn.cn/xjp190612/index.htm" target="_blank"><img src="/html/files/2019-06/11/20190611160137233208198.jpg" width="300" height="210"></a> <h2>ר��</h2> <p class="mask"> <h3>ϰ��ƽ����������������ϯ���ʻ���</h3> </p> </li> 
-      <li> <a href="http://news.workercn.cn/xjp190605/index.htm" target="_blank"><img src="/html/files/2019-06/03/20190603153355047275727.jpg" width="300" height="210"></a> <h2>ר��</h2> <p class="mask"> <h3>ϰ��ƽ�Զ���˹���й��·���</h3> </p> </li> 
-      <li> <a href="http://news.workercn.cn/bwcxljsm0606/index.html" target="_blank"><img src="/html/files/2019-06/06/20190606161124604441908.jpg" width="300" height="210"></a> <h2>ר��</h2> <p class="mask"> <h3>�������� �μ�ʹ��</h3> </p> </li> 
-      <li> <a href="http://news.workercn.cn/zl70n/index.htm" target="_blank"><img src="/html/files/2019-04/10/20190410102055305250671.jpg" width="300" height="210"></a> <h2>ר��</h2> <p class="mask"> <h3>׳��70��?�ܶ���ʱ��</h3> </p> </li> 
-      <li> <a href="http://news.workercn.cn/grrbewp/index.html" target="_blank"><img src="/html/files/2019-05/13/20190513082716430399695.jpg" width="300" height="210"></a> <h2>ר��</h2> <p class="mask"> <h3>�����ձ�e����</h3> </p> </li> 
+    <!--模块内容--> 
+    <div id="zdg_con"> 
+     <div class="main_con" readabilityContentScore="93"> 
+      <div class="main_p" readabilityContentScore="48"> 
+       <div class="vid_src"> 
+        <img src="images/video.jpg"> 
+       </div> 
+       <p>新华社昆明6月18日电 题：藏区“感恩连”</p> 
+       <p>新华社记者周亮、王长山、杨静</p> 
+       <p>格茸没当过兵，但在40岁这年，他当上了“连长”。</p> 
+       <p>这是个民间自发组建的“连队”，名字叫“精准扶贫感恩连”。</p> 
+       <p>队伍是格茸拉起来的，这个“官”也是大伙推举的。“连队”的大部分成员是村里的共产党员，来自已经率先脱贫的家庭。他们的宗旨是“脱贫致富感党恩，助人脱贫传党恩”。</p> 
+       <div class="lh_img" readabilityContentScore="8"> 
+        <img src="images/5.jpg"> 
+        <p>在云南香格里拉市五境乡，“精准扶贫感恩连”队员在跳锅庄（3月13日摄）。新华社记者 胡超 摄</p> 
+       </div> 
+       <p>两年多来，“格茸连长”和他的“连”志愿做了许多实事好事，当地各族干部群众向他们竖起了大拇指！</p> 
+       <p>自从格茸他们把旗子竖起来后，云南省迪庆藏族自治州其他地方纷纷效仿。如今，滇西北高原29个乡镇先后建起了52支“感恩连”，成为推进脱贫攻坚决战的一个个战斗堡垒。</p> 
+      </div> 
+      <p class="main_con_head"> <h2>格茸其人</h2> </p> 
+      <div class="main_p" readabilityContentScore="160"> 
+       <p>格茸看上去并没有多少英雄气概，就是个普普通通的中年藏族农民。</p> 
+       <p>高原的阳光，晒得他肤色黝黑，面容比实际年龄显得老一些，加之身形瘦弱，一米七左右的个子，与人们印象中的康巴汉子有一些距离，但作为庄稼人，身板倒也结实，眼睛清亮。话不多，脸上总挂着笑。</p> 
+       <p>他的履历比较简单：出生在小山村，在山脚下的乡里上小学，再到州府香格里拉市上中学，初中毕业后回村务农，然后结婚。</p> 
+       <p>但在2017年5月21日这天，他干了一件很不简单的事——提议成立“感恩连”。</p> 
+       <p>格茸家住香格里拉市五境乡泽通村吉仁叶古村民小组，小村庄共有42户藏族居民。</p> 
+       <p>香格里拉风光雄浑壮美，但风景填不饱肚子。家里7口人，媳妇和岳父患病，2个小孩上学，青稞、苞谷卖不上价，山货也运不出去，日子过得紧巴巴的。</p> 
+       <p>格茸是厚道人，后来当上了村民小组的党支部副书记。但当2015年被识别为建档立卡贫困户时，他脸上有些挂不住了。</p> 
+       <p>“我是副支书，又有点文化，当贫困户让我抬不起头。”格茸告诉记者，“当时我决心就拼一下，带头脱贫！”</p> 
+       <p>脱贫攻坚当中，政府各项支持政策不断到位。迪庆州属于最难脱贫的“三区三州”之列，国家给了重点扶持。百般比较后，格茸决定养野鸡。</p> 
+       <p>去养鸡大户那里考察后，格茸在国家产业扶持资金支持下，学技术、搭罩网、买鸡苗……很快，房前就传出了阵阵鸡鸣。“野鸡3个月就可以出栏，价钱高，销路好。”格茸盘算着收益。</p> 
+       <p>然而,很快一盆凉水向他泼来。一天，鸡场里出现了几只死鸡。难道是食物不对？还是发了鸡瘟？格茸心里一紧，找来行家里手求教，也没有弄出个头绪。经过几天观察，格茸终于发现，原来是野鸡性子野，是互相看不对眼“打架”所致。</p> 
+       <p>怎么解决？到网上找找法子。格茸试着买了批专用眼罩，白天给每只鸡都戴上，这样野鸡看不到对方，各自相安无事。很快，格茸家养的野鸡戴“小眼镜”的事，传遍了四邻八乡。</p> 
+       <p>当年，野鸡卖了6000元，朝天椒入账8000元，生态补偿资金、退耕还林等让一家人享受政策扶持近2万元，还有打零工的收入……很快，格茸一家脱贫了。</p> 
+       <p>与此同时，村里通了电和硬化路，家家有产业，人均收入逾6000元，自来水、太阳能热水器等也用上了。现在，驱车40分钟左右就可从乡政府所在地来到吉仁叶古村民小组。</p> 
+       <p>格茸的岳母扎史姆70多岁，是旧社会吃过大苦的人。老人常在格茸耳边叨念：现在日子好了，咱藏家人要懂得感恩，要知恩图报！格茸听在耳中，记在心里，渐渐萌生了多做好事的想法。</p> 
+       <div class="lh_img" readabilityContentScore="8"> 
+        <img src="images/4.jpg"> 
+        <p>在云南香格里拉市五境乡，格茸（左）和“精准扶贫感恩连”队员在植树（3月13日摄）。 新华社记者 胡超 摄</p> 
+       </div> 
+       <p>前年的那天下午，泽通村40多户曾经的贫困村民聚在一起参加护林员培训，一直默然不语的格茸突然站起来，岔开了话题——</p> 
+       <p>“我们现在有吃有穿，是党的政策好。作为党员，不能只顾自己，要带头感念党恩。党中央要求我们迪庆打好脱贫攻坚战，我们党员应该拢在一起，响应号召，帮助贫困户早点脱贫。”格茸说。</p> 
+       <p>“好，这个主意不错！我们大家一起干！”大家回应道。</p> 
+       <p>大伙越说越兴奋，越议越激动。可怎么干呢？从哪里开始？大家又把目光投向了格茸。</p> 
+       <p>“我想好了，咱成立一个感念党恩的团队，名字就叫‘感恩连’，大家看怎么样？”</p> 
+       <p>“好！好！”会场响起了一片掌声。</p> 
+       <p>“格茸，你来当‘连长’吧，我们跟着你。”</p> 
+       <p>“我们‘感恩连’要有自己的旗子，还要有‘连规’。”有人倡议。</p> 
+       <p>一番议论后，这件事就算定下来了。</p> 
+       <p>时值迪庆州按照省里部署，正在深入开展“自强、诚信、感恩”主题实践活动，乡里听了格茸的汇报后，给予充分肯定。很快，格茸代表“全连”，从乡领导手中接过了“精准扶贫感恩连”的红旗。</p> 
+       <div class="lh_img" readabilityContentScore="7"> 
+        <img src="images/3.jpg"> 
+        <p>“精准扶贫感恩连”在云南香格里拉市五境乡开展植树活动（3月13日无人机拍摄）。新华社记者 胡超 摄</p> 
+       </div> 
+      </div> 
+      <!--隐藏内容--> 
+      <div class="none" readabilityContentScore="101"> 
+       <p class="main_con_head"> <h2>“连队”纪事</h2> </p> 
+       <div class="main_p" readabilityContentScore="156"> 
+        <p>“你也试试养野鸡好不好？我来教你。”一天傍晚，收工后的格茸专程来到同村村民肖农家。</p> 
+        <p>两个孩子残疾，只有2亩旱地，家里入不敷出，让54岁的肖农整天愁眉不展。近年来，政府为肖农安排了护林员的岗位，收入稳定了些，但当拿着政府发的3000元产业扶持资金，肖农又犯了难，不知该干点什么。</p> 
+        <p>格茸的到来，就像一场“及时雨”。此后，格茸一次次上门，帮助平场地、防疫病，耐心示范给野鸡戴眼罩的绝招。当年，肖农家的120只野鸡出栏了，一下子净赚几千元。“加上朝天椒收入和国家的扶持，我家年收入超5万元了。” 肖农没见过这么多钱，眉头终于打开了。2017年底，他向格茸提出加入“感恩连”。</p> 
+        <p>脱贫攻坚要求解决贫困户的住房安全问题。在政府的支持下，村民建房的资金解决了，但请工是要花钱的，格茸和队员们商议，免费帮工。一时间，吉仁叶古村的山坡上，活跃着一群撸袖干活的“感恩连”队员。</p> 
+        <p>不论大小，只要是做好事，“感恩连”都会主动伸手。队员们帮建档立卡户发展生产，替缺少劳力的家庭干活，到村里捡垃圾，帮生活不便的老人洗头，为村民打扫庭院。队员国青向群众免费提供了1.6万多只鸡苗，并与35户签订了收购协议……</p> 
+        <p>去年11月金沙江白格堰塞湖泄洪，按部署，沿江各村镇需要及时疏散和安置群众，位于江畔的五境乡也紧急行动起来。接到通知后，格茸立即带领10多名青壮年队员下山，赶到沿江低洼地段帮助群众转移财产，搭建帐篷，从早干到晚。洪峰过后，一些店铺和居民家残留着2米多深的淤泥，格茸和队员又挽起裤脚，逐户清淤。就这样，他们自带干粮在江边忙了两天两夜，回家时个个累得不成人形。</p> 
+        <p>“感恩连”虽然是个最基层的群众志愿组织，但他们行事却颇为高调。有时，格茸会高举旗子走在队伍排头，有时会骑着摩托车，把旗子插在车头。“连队”成员大部分是党员，开展活动时要求佩戴党徽。</p> 
+        <p>“就是要人看到，我们做事是为了感念党恩。这是件光荣的事，要做出响动。”格茸说。</p> 
+        <p>“瞧，‘感恩连’又来了。”今年3月13日，83岁的此里卓玛看到山角转过来一支打着旗子的队伍，便急忙回屋准备酥油茶。</p> 
+        <p>“老人家，身体可好？我们几个这次来，帮你犁地。”一进院门，格茸就拉住老人的双手大声说道。</p> 
+        <div class="lh_img" readabilityContentScore="8"> 
+         <img src="images/1.jpg"> 
+         <p>在云南香格里拉市五境乡，格茸（右）和达瓦卓玛老人聊天（3月13日摄）。新华社记者 胡超 摄</p> 
+        </div> 
+        <p>春耕时令快过了，此里卓玛家缺少劳力，屋后的几亩旱地还没有犁，老人心里正焦急，“感恩连”来了。</p> 
+        <p>泥土散发着特殊的清香，庄稼正在抽芽。见到记者，卓玛老人拉着我们的手，指着后山坡说：“今年收成有了，多亏有格茸他们。”</p> 
+        <p>“我小时候苦啊！哪有人管我们死活。你看现在，党中央惦记着我们，党员帮着我们，我怎能不感恩呢！”老人感慨道。</p> 
+        <p>“感恩连”的名气越来越大，许多脱贫后的村民要求加入。</p> 
+        <p>“入连把关很严的。”格茸介绍，“要写申请，还要看有没有善心。”</p> 
+        <p>24岁的夏巴央卓染着一头黄发，看上去有点吊儿郎当，但他却是“感恩连”年龄最小的队员，只要微信群发布活动通知，他几乎每次都第一个报名参加。他说，哪怕就抬桶水浇一下花，也有意义。</p> 
+        <p>在植树活动中，不是“感恩连”队员的鲁茸扎史也来了。“女儿有事外出，我来替她。”老人笑着说。</p> 
+        <p>当初为什么叫“感恩连”？格茸介绍，是因为队员分布在各村民小组，“连、排、班”可以对应行政村、片区、村民小组，方便组织活动。还有就是想学习部队的战斗精神。</p> 
+        <p>在格茸的带领下，“感恩连”的帮扶内容越来越多样，加入的人也越来越多。目前泽通村“感恩连”已有48人，组建了文化传承、产业指导、公共卫生服务、帮困送温暖4个“排”。</p> 
+       </div> 
+       <p class="main_con_head"> <h2>同心之力</h2> </p> 
+       <div class="main_p" readabilityContentScore="117"> 
+        <p>迪庆地处滇川藏三省区交界处，藏语意为“吉祥如意的地方”。</p> 
+        <p>“我是旧社会过来的人，小时候哪会觉得家乡美！现在日子好了，才有心情看一看风景。”此里卓玛老人笑着对记者说。</p> 
+        <p>在党的关怀下，迪庆高原新中国成立后发生了历史性变迁，全州农民人均纯收入从1957年的58元增至2018年的8515元。</p> 
+        <p>水有源，树有根！口袋鼓起来了，精神不能瘪下去。</p> 
+        <div class="lh_img" readabilityContentScore="8"> 
+         <img src="images/2.jpg"> 
+         <p>在云南香格里拉市五境乡，“精准扶贫感恩连”队员在跳锅庄（3月13日无人机拍摄）。新华社记者 胡超 摄</p> 
+        </div> 
+        <p>党和政府花了很大力气关怀和帮助迪庆发展和群众脱贫，但仍有一些群众对政策知晓度、满意度不高，一些人身上存在“等靠要”思想。迪庆属于“三区三州”，是深度贫困地区，明年底要与全国同步进入全面小康，脱贫攻坚任务异常繁重。为此，迪庆州开展了“学党史、识州情，感党恩、跟党走”主题教育活动，对比新中国成立前后、建州前后、改革开放前后和十八大前后迪庆的变化，让群众明白惠在何处、福从何来？同时，激发各族干部群众内生动力，激励继续奋斗。</p> 
+        <p>五境乡党委书记高志华介绍，前几年乡里提出，村干部要和村民一起算清惠民政策、基础设施投入、产业发展投入、群众自我发展“四笔账”。“感恩连”的出现，恰好架起了党和政府联系村民的桥梁。</p> 
+        <p>“党和政府给了我们藏区群众这么多实惠，乡亲们心里应该有个数。”格茸说，“历朝历代，古今中外，哪有这么多好事？我们不能认为这些实惠都是理所应当的，可不能忘本！”</p> 
+        <p>田间地头、红白喜事、农闲串门，只要有合适的场合时机，“感恩连”就用身边人和身边事宣讲党的恩情，用自己的感受宣传党的政策，用自己的行动帮扶困难群众。</p> 
+        <p>泽通村吉仁水村民小组藏族汉子扎史尼玛，有一阵子都不好意思见人，原因是2015年被识别为建档立卡贫困户。他家有2位老人患慢性病，捡菌子卖的那点钱还不够给老人看病。</p> 
+        <div class="lh_img" readabilityContentScore="8"> 
+         <img src="images/6.jpg"> 
+         <p>在云南香格里拉市五境乡，格茸帮助生活不便的老人犁地（3月13日摄）。 新华社记者 胡超 摄</p> 
+        </div> 
+        <p>“如果自己趴在地上不想起来，就是有人来扶，也是站不起来的。”扎史尼玛下决心找到出路，他把政府提供的产业发展基金、护林员工资、低保等共2万元，集中投入用来养猪。2015年养猪50头收入万余元，2016年养猪80头收入5万多元，2017年养土鸡2000多只收入6万多元……过程虽辛苦，但一天天增长的收获让扎史尼玛挺直了腰杆。</p> 
+        <p>“去年，我家的猪和鸡卖了近10万元，都卖到香格里拉了。”脱贫后的扎史尼玛说话的声音如今都洪亮起来了。他也加入了“感恩连”，还牵头成立养殖专业合作社，计划养鸡5万只。</p> 
+        <p>谈起“感恩连”，迪庆州委组织部部长王云松说，因为是自发的，所以更有生命力，虽然做的都是小事，但带动效果好。</p> 
+        <p>如今，“连长”格茸在迪庆小有名气，经常去其他地方作报告，还参加了州里的脱贫攻坚“自强、诚信、感恩”宣讲会。</p> 
+        <p>五境乡其他村也成立了“感恩连”，成员逾百人。州里不少村子组织党员干部前来考察学习，目前，有29个乡镇成立“感恩连”。</p> 
+        <p>“‘感恩连’在脱贫攻坚中的推动作用日益凸显，感念党恩成为迪庆藏区群众的行动自觉。”迪庆州委书记顾琨说。</p> 
+        <p>身处大时代，“小人物”也能有大作为。</p> 
+       </div> 
+      </div> 
+      <p id="open"> <h3>———— 全文 ————</h3> </p> 
+      <p id="close"> <h3>———— 收起 ————</h3> </p> 
+     </div> 
+    </div> 
+   </div> 
+   <div id="one"> 
+    <div class="main_head"> 
+     <div class="fl"> 
+      <p class="img">高清图集</p> 
+     </div> 
+    </div> 
+    <div class="main_con"> 
+     <ul class="bxslider" readabilityContentScore="3"> 
+      <li readabilityContentScore="0"> <img src="images/1.jpg?v=2"> <p>在云南香格里拉市五境乡，格茸（右）和达瓦卓玛老人聊天（3月13日摄）。新华社记者 胡超 摄</p> </li> 
+      <li readabilityContentScore="0"> <img src="images/2.jpg"> <p>在云南香格里拉市五境乡，“精准扶贫感恩连”队员在跳锅庄（3月13日无人机拍摄）。新华社记者 胡超 摄</p> </li> 
+      <li readabilityContentScore="-1"> <img src="images/3.jpg"> <p>“精准扶贫感恩连”在云南香格里拉市五境乡开展植树活动（3月13日无人机拍摄）。新华社记者 胡超 摄</p> </li> 
+      <li readabilityContentScore="0"> <img src="images/4.jpg"> <p>在云南香格里拉市五境乡，格茸（左）和“精准扶贫感恩连”队员在植树（3月13日摄）。 新华社记者 胡超 摄</p> </li> 
+      <li readabilityContentScore="0"> <img src="images/5.jpg"> <p>在云南香格里拉市五境乡，“精准扶贫感恩连”队员在跳锅庄（3月13日摄）。新华社记者 胡超 摄</p> </li> 
+      <li readabilityContentScore="0"> <img src="images/6.jpg?v=2"> <p>在云南香格里拉市五境乡，格茸帮助生活不便的老人犁地（3月13日摄）。 新华社记者 胡超 摄</p> </li> 
      </ul> 
     </div> 
    </div> 
+   <!--版权-->  
   </div> 
-  <p class="ad1"> &nbsp; </p>  
-  <!-- public area --> 
-  <div class="floatewm">
-    ɨ���ע 
-   <br> 
-   <img src="http://www.workercn.cn/html/files/2016-05/05/20160505091122915598118.jpg"> 
-   <br> 
-   <img src="http://www.workercn.cn/html/files/2016-05/05/20160505091015647472874.jpg"> 
-   <p></p>
-   <p>�����ձ� <br>�ͻ��� <br> <img src="http://www.workercn.cn/html/files/2016-05/05/ewm-grrb-pg.gif" width="74" height="74"> <span>ƻ����</span> <br> <img src="http://www.workercn.cn/html/files/2016-05/05/ewm-grrb-az.gif" width="74" height="74"> <span>��׿��</span> </p>
-  </div>
+  <div style="display:none" readabilityContentScore="7"> 
+   <p id="fwl"> 010020050630000000000000011200000000000000 </p> 
+   <noscript> 
+    <img src="http://webd.home.news.cn/1.gif?z=1&amp;_wdxid=010020050630000000000000011200000000000000" border="0"> 
+   </noscript> 
+  </div> 
+  <div style="display:none" readabilityContentScore="7"> 
+   <p id="fwl"> 010020050640000000000000011200000000000000 </p> 
+   <noscript> 
+    <img src="http://webd.home.news.cn/1.gif?z=1&amp;_wdxid=010020050640000000000000011200000000000000 " border="0 "> 
+   </noscript> 
+  </div> 
+  <!--<div style="opacity: 0;z-index: -1">--> 
+  <!--<div class="share-img " style="width: 0;height: 0;overflow: hidden; "><img src="images/fenxiang.jpg?v=1"></div>--> 
+  <!--<p class="share-title " style="height:0;overflow: hidden;width: 0; ">开放中国：大门越开越大 道路越走越宽</p>--> 
+  <!--<p class="share-substr " style="height:0;overflow: hidden;width: 0; ">改革开放４０年，中华大地处处沧桑巨变，一派生机勃勃。进入新时代，全国各条战线砥砺奋进，气象万千。</p>--> 
+  <!--</div>-->
  </body>
 </html>
