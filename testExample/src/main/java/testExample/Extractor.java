@@ -61,7 +61,6 @@ public class Extractor {
 					return h1tag.text();
 				}
 			}
-			//System.out.println("title��  h1�޹أ� "+H1Tag.html());
 		}
 		else if(H1Tag.isEmpty() && !titleTag.isEmpty()){//û��H1��ǩ
 			title_text= titleTag.first().text();
@@ -117,6 +116,12 @@ public class Extractor {
 			List<String> imgList = imgRead.getImgList();
 			for(String img: imgList){
 				System.out.println("picture: "+img);
+			}
+			try {
+				File newsFile = new File("test/pictext.txt");
+				FileUtils.writeStringToFile(newsFile, "news url: "+ news + "\n" + imgList.toString() + "\n*****************************************************\n", true);
+			} catch (IOException e) {
+				e.printStackTrace();
 			}
 			System.out.println("\n*****************************************************\n");
 			//break;
